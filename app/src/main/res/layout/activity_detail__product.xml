@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detail_Product"
+    android:id="@+id/layout_detalle_product"
+    android:orientation="vertical"
+    android:paddingBottom="16sp"
+    android:paddingLeft="64dp"
+    android:paddingRight="64dp"
+    android:paddingTop="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titulo"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:text="Titulo"/>
+
+    <ImageView
+        android:id="@+id/imgFoto"
+        android:layout_width="204dp"
+        android:layout_height="235dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:src="@drawable/camisa_rea" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/descripcion"
+        android:textStyle="italic"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:text="Descripcion"/>
+
+</LinearLayout>
