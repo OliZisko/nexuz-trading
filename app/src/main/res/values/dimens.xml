@@ -12,4 +12,5 @@
     <dimen name="margin_top">10dp</dimen>
     <dimen name="height_divider">3dp</dimen>
     <dimen name="height_dividers">1dp</dimen>
+    <dimen name="title_splash_screen">50sp</dimen>
 </resources>
