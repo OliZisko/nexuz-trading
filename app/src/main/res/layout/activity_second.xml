@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_gray"
-    tools:context=".MainActivity">
+    tools:context=".SecondActivity">
 
     <ImageView
         android:id="@+id/app_title"
@@ -23,23 +23,10 @@
         android:padding="@dimen/padding_title"
         android:layout_below="@id/app_title"
         android:layout_centerHorizontal="true"
-        android:text="@string/shopping_cart"
+        android:text="@string/list_items"
         android:textSize="@dimen/dimen_subtitle"
         android:textStyle="bold"
         android:textColor="@color/text_white"
-        />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/float_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/margin_general"
-        android:layout_alignEnd="@id/scroll_items"
-        android:layout_alignRight="@id/scroll_items"
-        android:src="@drawable/botoncruz"
-        app:backgroundTint="@color/button_float"
-        android:onClick="showSecondActivity"
         />
 
     <ScrollView
@@ -48,7 +35,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/shopping_cart">
-        
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -546,6 +533,427 @@
                 android:layout_marginStart="@dimen/margin_left_subtitle"
                 android:layout_toEndOf="@id/image_item10"
                 />
+
+            <ImageView
+                android:id="@+id/image_item11"
+                android:layout_width="@dimen/dimen_cart_image"
+                android:layout_height="@dimen/dimen_cart_image"
+                android:layout_below="@id/image_item10"
+                android:src="@drawable/realmadrid"
+                android:contentDescription="@string/content_Imageview"
+                android:padding="@dimen/padding_title"
+                />
+
+            <TextView
+                android:id="@+id/text_item11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_title"
+                android:layout_below="@+id/image_item10"
+                android:layout_toRightOf="@id/image_item11"
+                android:text="@string/text_item11"
+                android:textSize="@dimen/dimen_title"
+                android:textStyle="bold"
+                android:textColor="@color/text_white"
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_marginStart="@dimen/margin_left_title"
+                android:layout_toEndOf="@id/image_item11"
+                />
+
+            <TextView
+                android:id="@+id/text_description11"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_subtitle"
+                android:layout_marginLeft="@dimen/margin_left_subtitle"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_item11"
+                android:layout_toRightOf="@id/image_item11"
+                android:text="@string/subtext_item11"
+                android:textSize="@dimen/dimen_subtitle"
+                android:textStyle="bold"
+                android:textColor="@color/text_white"
+                android:layout_marginStart="@dimen/margin_left_subtitle"
+                android:layout_toEndOf="@id/image_item11"
+                />
+
+            <ImageView
+                android:id="@+id/image_item12"
+                android:layout_width="@dimen/dimen_cart_image"
+                android:layout_height="@dimen/dimen_cart_image"
+                android:layout_below="@id/image_item11"
+                android:src="@drawable/realmadrid"
+                android:contentDescription="@string/content_Imageview"
+                android:padding="@dimen/padding_title"
+                />
+
+            <TextView
+                android:id="@+id/text_item12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_title"
+                android:layout_below="@+id/image_item11"
+                android:layout_toRightOf="@id/image_item12"
+                android:text="@string/text_item12"
+                android:textSize="@dimen/dimen_title"
+                android:textStyle="bold"
+                android:textColor="@color/text_white"
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_marginStart="@dimen/margin_left_title"
+                android:layout_toEndOf="@id/image_item12"
+                />
+
+            <TextView
+                android:id="@+id/text_description12"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_subtitle"
+                android:layout_marginLeft="@dimen/margin_left_subtitle"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_item12"
+                android:layout_toRightOf="@id/image_item12"
+                android:text="@string/subtext_item12"
+                android:textSize="@dimen/dimen_subtitle"
+                android:textStyle="bold"
+                android:textColor="@color/text_white"
+                android:layout_marginStart="@dimen/margin_left_subtitle"
+                android:layout_toEndOf="@id/image_item12"
+                />
+
+            <ImageView
+                android:id="@+id/image_item13"
+                android:layout_width="@dimen/dimen_cart_image"
+                android:layout_height="@dimen/dimen_cart_image"
+                android:layout_below="@id/image_item12"
+                android:src="@drawable/realmadrid"
+                android:contentDescription="@string/content_Imageview"
+                android:padding="@dimen/padding_title"
+                />
+
+            <TextView
+                android:id="@+id/text_item13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_title"
+                android:layout_below="@+id/image_item12"
+                android:layout_toRightOf="@id/image_item13"
+                android:text="@string/text_item13"
+                android:textSize="@dimen/dimen_title"
+                android:textStyle="bold"
+                android:textColor="@color/text_white"
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_marginStart="@dimen/margin_left_title"
+                android:layout_toEndOf="@id/image_item13"
+                />
+
+            <TextView
+                android:id="@+id/text_description13"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_subtitle"
+                android:layout_marginLeft="@dimen/margin_left_subtitle"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_item13"
+                android:layout_toRightOf="@id/image_item13"
+                android:text="@string/subtext_item13"
+                android:textSize="@dimen/dimen_subtitle"
+                android:textStyle="bold"
+                android:textColor="@color/text_white"
+                android:layout_marginStart="@dimen/margin_left_subtitle"
+                android:layout_toEndOf="@id/image_item13"
+                />
+
+            <ImageView
+                android:id="@+id/image_item14"
+                android:layout_width="@dimen/dimen_cart_image"
+                android:layout_height="@dimen/dimen_cart_image"
+                android:layout_below="@id/image_item13"
+                android:src="@drawable/realmadrid"
+                android:contentDescription="@string/content_Imageview"
+                android:padding="@dimen/padding_title"
+                />
+
+            <TextView
+                android:id="@+id/text_item14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_title"
+                android:layout_below="@+id/image_item13"
+                android:layout_toRightOf="@id/image_item14"
+                android:text="@string/text_item14"
+                android:textSize="@dimen/dimen_title"
+                android:textStyle="bold"
+                android:textColor="@color/text_white"
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_marginStart="@dimen/margin_left_title"
+                android:layout_toEndOf="@id/image_item14"
+                />
+
+            <TextView
+                android:id="@+id/text_description14"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_subtitle"
+                android:layout_marginLeft="@dimen/margin_left_subtitle"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_item14"
+                android:layout_toRightOf="@id/image_item14"
+                android:text="@string/subtext_item14"
+                android:textSize="@dimen/dimen_subtitle"
+                android:textStyle="bold"
+                android:textColor="@color/text_white"
+                android:layout_marginStart="@dimen/margin_left_subtitle"
+                android:layout_toEndOf="@id/image_item14"
+                />
+
+            <ImageView
+                android:id="@+id/image_item15"
+                android:layout_width="@dimen/dimen_cart_image"
+                android:layout_height="@dimen/dimen_cart_image"
+                android:layout_below="@id/image_item14"
+                android:src="@drawable/realmadrid"
+                android:contentDescription="@string/content_Imageview"
+                android:padding="@dimen/padding_title"
+                />
+
+            <TextView
+                android:id="@+id/text_item15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_title"
+                android:layout_below="@+id/image_item14"
+                android:layout_toRightOf="@id/image_item15"
+                android:text="@string/text_item15"
+                android:textSize="@dimen/dimen_title"
+                android:textStyle="bold"
+                android:textColor="@color/text_white"
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_marginStart="@dimen/margin_left_title"
+                android:layout_toEndOf="@id/image_item15"
+                />
+
+            <TextView
+                android:id="@+id/text_description15"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_subtitle"
+                android:layout_marginLeft="@dimen/margin_left_subtitle"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_item15"
+                android:layout_toRightOf="@id/image_item15"
+                android:text="@string/subtext_item15"
+                android:textSize="@dimen/dimen_subtitle"
+                android:textStyle="bold"
+                android:textColor="@color/text_white"
+                android:layout_marginStart="@dimen/margin_left_subtitle"
+                android:layout_toEndOf="@id/image_item15"
+                />
+
+            <ImageView
+                android:id="@+id/image_item16"
+                android:layout_width="@dimen/dimen_cart_image"
+                android:layout_height="@dimen/dimen_cart_image"
+                android:layout_below="@id/image_item15"
+                android:src="@drawable/realmadrid"
+                android:contentDescription="@string/content_Imageview"
+                android:padding="@dimen/padding_title"
+                />
+
+            <TextView
+                android:id="@+id/text_item16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_title"
+                android:layout_below="@+id/image_item15"
+                android:layout_toRightOf="@id/image_item16"
+                android:text="@string/text_item16"
+                android:textSize="@dimen/dimen_title"
+                android:textStyle="bold"
+                android:textColor="@color/text_white"
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_marginStart="@dimen/margin_left_title"
+                android:layout_toEndOf="@id/image_item16"
+                />
+
+            <TextView
+                android:id="@+id/text_description16"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_subtitle"
+                android:layout_marginLeft="@dimen/margin_left_subtitle"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_item16"
+                android:layout_toRightOf="@id/image_item16"
+                android:text="@string/subtext_item16"
+                android:textSize="@dimen/dimen_subtitle"
+                android:textStyle="bold"
+                android:textColor="@color/text_white"
+                android:layout_marginStart="@dimen/margin_left_subtitle"
+                android:layout_toEndOf="@id/image_item16"
+                />
+
+            <ImageView
+                android:id="@+id/image_item17"
+                android:layout_width="@dimen/dimen_cart_image"
+                android:layout_height="@dimen/dimen_cart_image"
+                android:layout_below="@id/image_item16"
+                android:src="@drawable/realmadrid"
+                android:contentDescription="@string/content_Imageview"
+                android:padding="@dimen/padding_title"
+                />
+
+            <TextView
+                android:id="@+id/text_item17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_title"
+                android:layout_below="@+id/image_item16"
+                android:layout_toRightOf="@id/image_item17"
+                android:text="@string/text_item17"
+                android:textSize="@dimen/dimen_title"
+                android:textStyle="bold"
+                android:textColor="@color/text_white"
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_marginStart="@dimen/margin_left_title"
+                android:layout_toEndOf="@id/image_item17"
+                />
+
+            <TextView
+                android:id="@+id/text_description17"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_subtitle"
+                android:layout_marginLeft="@dimen/margin_left_subtitle"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_item17"
+                android:layout_toRightOf="@id/image_item17"
+                android:text="@string/subtext_item17"
+                android:textSize="@dimen/dimen_subtitle"
+                android:textStyle="bold"
+                android:textColor="@color/text_white"
+                android:layout_marginStart="@dimen/margin_left_subtitle"
+                android:layout_toEndOf="@id/image_item17"
+                />
+
+            <ImageView
+                android:id="@+id/image_item18"
+                android:layout_width="@dimen/dimen_cart_image"
+                android:layout_height="@dimen/dimen_cart_image"
+                android:layout_below="@id/image_item17"
+                android:src="@drawable/realmadrid"
+                android:contentDescription="@string/content_Imageview"
+                android:padding="@dimen/padding_title"
+                />
+
+            <TextView
+                android:id="@+id/text_item18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_title"
+                android:layout_below="@+id/image_item17"
+                android:layout_toRightOf="@id/image_item18"
+                android:text="@string/text_item18"
+                android:textSize="@dimen/dimen_title"
+                android:textStyle="bold"
+                android:textColor="@color/text_white"
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_marginStart="@dimen/margin_left_title"
+                android:layout_toEndOf="@id/image_item18"
+                />
+
+            <TextView
+                android:id="@+id/text_description18"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_subtitle"
+                android:layout_marginLeft="@dimen/margin_left_subtitle"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_item18"
+                android:layout_toRightOf="@id/image_item18"
+                android:text="@string/subtext_item18"
+                android:textSize="@dimen/dimen_subtitle"
+                android:textStyle="bold"
+                android:textColor="@color/text_white"
+                android:layout_marginStart="@dimen/margin_left_subtitle"
+                android:layout_toEndOf="@id/image_item18"
+                />
+
+            <ImageView
+                android:id="@+id/image_item19"
+                android:layout_width="@dimen/dimen_cart_image"
+                android:layout_height="@dimen/dimen_cart_image"
+                android:layout_below="@id/image_item18"
+                android:src="@drawable/realmadrid"
+                android:contentDescription="@string/content_Imageview"
+                android:padding="@dimen/padding_title"
+                />
+
+            <TextView
+                android:id="@+id/text_item19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_title"
+                android:layout_below="@+id/image_item18"
+                android:layout_toRightOf="@id/image_item19"
+                android:text="@string/text_item19"
+                android:textSize="@dimen/dimen_title"
+                android:textStyle="bold"
+                android:textColor="@color/text_white"
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_marginStart="@dimen/margin_left_title"
+                android:layout_toEndOf="@id/image_item19"
+                />
+
+            <TextView
+                android:id="@+id/text_description19"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_subtitle"
+                android:layout_marginLeft="@dimen/margin_left_subtitle"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_item19"
+                android:layout_toRightOf="@id/image_item19"
+                android:text="@string/subtext_item19"
+                android:textSize="@dimen/dimen_subtitle"
+                android:textStyle="bold"
+                android:textColor="@color/text_white"
+                android:layout_marginStart="@dimen/margin_left_subtitle"
+                android:layout_toEndOf="@id/image_item19"
+                />
+
+            <ImageView
+                android:id="@+id/image_item20"
+                android:layout_width="@dimen/dimen_cart_image"
+                android:layout_height="@dimen/dimen_cart_image"
+                android:layout_below="@id/image_item19"
+                android:src="@drawable/realmadrid"
+                android:contentDescription="@string/content_Imageview"
+                android:padding="@dimen/padding_title"
+                />
+
+            <TextView
+                android:id="@+id/text_item20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_title"
+                android:layout_below="@+id/image_item19"
+                android:layout_toRightOf="@id/image_item20"
+                android:text="@string/text_item20"
+                android:textSize="@dimen/dimen_title"
+                android:textStyle="bold"
+                android:textColor="@color/text_white"
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_marginStart="@dimen/margin_left_title"
+                android:layout_toEndOf="@id/image_item20"
+                />
+
+            <TextView
+                android:id="@+id/text_description20"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_subtitle"
+                android:layout_marginLeft="@dimen/margin_left_subtitle"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_item20"
+                android:layout_toRightOf="@id/image_item20"
+                android:text="@string/subtext_item20"
+                android:textSize="@dimen/dimen_subtitle"
+                android:textStyle="bold"
+                android:textColor="@color/text_white"
+                android:layout_marginStart="@dimen/margin_left_subtitle"
+                android:layout_toEndOf="@id/image_item20"
+                />
+
 
         </RelativeLayout>
 
