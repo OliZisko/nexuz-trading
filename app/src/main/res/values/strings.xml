@@ -1,7 +1,10 @@
 <resources>
     <string name="app_name">Nexuz Trading</string>
     <string name="app_title">Nexuz Trading</string>
+    <string name="content_Imageview">Camisa</string>
+    <string name="content_Imagelogo">Logo</string>
     <string name="shopping_cart">Su carrito de compra:</string>
+    <string name="list_items">Seleccione el artículo:</string>
     <string name="text_item1">Camisa Real Madrid</string>
     <string name="text_item2">Camisa Real Madrid</string>
     <string name="text_item3">Camisa Real Madrid</string>
@@ -12,6 +15,16 @@
     <string name="text_item8">Camisa Real Madrid</string>
     <string name="text_item9">Camisa Real Madrid</string>
     <string name="text_item10">Camisa Real Madrid</string>
+    <string name="text_item11">Camisa Real Madrid</string>
+    <string name="text_item12">Camisa Real Madrid</string>
+    <string name="text_item13">Camisa Real Madrid</string>
+    <string name="text_item14">Camisa Real Madrid</string>
+    <string name="text_item15">Camisa Real Madrid</string>
+    <string name="text_item16">Camisa Real Madrid</string>
+    <string name="text_item17">Camisa Real Madrid</string>
+    <string name="text_item18">Camisa Real Madrid</string>
+    <string name="text_item19">Camisa Real Madrid</string>
+    <string name="text_item20">Camisa Real Madrid</string>
     <string name="subtext_item1">13 Copas UEFA Champions. 50$</string>
     <string name="subtext_item2">13 Copas UEFA Champions. 50$</string>
     <string name="subtext_item3">13 Copas UEFA Champions. 50$</string>
@@ -22,6 +35,14 @@
     <string name="subtext_item8">13 Copas UEFA Champions. 50$</string>
     <string name="subtext_item9">13 Copas UEFA Champions. 50$</string>
     <string name="subtext_item10">13 Copas UEFA Champions. 50$</string>
-    <string name="content_Imageview">Camisa</string>
-    <string name="content_Imagelogo">Logo</string>
+    <string name="subtext_item11">13 Copas UEFA Champions. 50$</string>
+    <string name="subtext_item12">13 Copas UEFA Champions. 50$</string>
+    <string name="subtext_item13">13 Copas UEFA Champions. 50$</string>
+    <string name="subtext_item14">13 Copas UEFA Champions. 50$</string>
+    <string name="subtext_item15">13 Copas UEFA Champions. 50$</string>
+    <string name="subtext_item16">13 Copas UEFA Champions. 50$</string>
+    <string name="subtext_item17">13 Copas UEFA Champions. 50$</string>
+    <string name="subtext_item18">13 Copas UEFA Champions. 50$</string>
+    <string name="subtext_item19">13 Copas UEFA Champions. 50$</string>
+    <string name="subtext_item20">13 Copas UEFA Champions. 50$</string>
 </resources>
