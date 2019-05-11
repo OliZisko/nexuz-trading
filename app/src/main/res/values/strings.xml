@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">Nexuz Trading</string>
+    <string name="app_title">Nexuz Trading</string>
+    <string name="shopping_cart">Su carrito de compra:</string>
+    <string name="text_item1">Camisa Real Madrid</string>
+    <string name="text_item2">Camisa Real Madrid</string>
+    <string name="text_item3">Camisa Real Madrid</string>
+    <string name="text_item4">Camisa Real Madrid</string>
+    <string name="text_item5">Camisa Real Madrid</string>
+    <string name="text_item6">Camisa Real Madrid</string>
+    <string name="text_item7">Camisa Real Madrid</string>
+    <string name="text_item8">Camisa Real Madrid</string>
+    <string name="text_item9">Camisa Real Madrid</string>
+    <string name="text_item10">Camisa Real Madrid</string>
+    <string name="subtext_item1">13 Copas UEFA Champions. 50$</string>
+    <string name="subtext_item2">13 Copas UEFA Champions. 50$</string>
+    <string name="subtext_item3">13 Copas UEFA Champions. 50$</string>
+    <string name="subtext_item4">13 Copas UEFA Champions. 50$</string>
+    <string name="subtext_item5">13 Copas UEFA Champions. 50$</string>
+    <string name="subtext_item6">13 Copas UEFA Champions. 50$</string>
+    <string name="subtext_item7">13 Copas UEFA Champions. 50$</string>
+    <string name="subtext_item8">13 Copas UEFA Champions. 50$</string>
+    <string name="subtext_item9">13 Copas UEFA Champions. 50$</string>
+    <string name="subtext_item10">13 Copas UEFA Champions. 50$</string>
+    <string name="content_Imageview">Camisa</string>
+    <string name="content_Imagelogo">Logo</string>
 </resources>
