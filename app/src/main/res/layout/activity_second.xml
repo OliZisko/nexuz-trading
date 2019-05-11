@@ -116,6 +116,76 @@
                 android:background="@color/colorPrimary"
                 android:layout_below="@id/image_item10"/>
 
+            <View
+                android:id="@+id/divider11"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_dividers"
+                android:background="@color/colorPrimary"
+                android:layout_below="@id/image_item11"/>
+
+            <View
+                android:id="@+id/divider12"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_dividers"
+                android:background="@color/colorPrimary"
+                android:layout_below="@id/image_item12"/>
+
+            <View
+                android:id="@+id/divider13"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_dividers"
+                android:background="@color/colorPrimary"
+                android:layout_below="@id/image_item13"/>
+
+            <View
+                android:id="@+id/divider14"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_dividers"
+                android:background="@color/colorPrimary"
+                android:layout_below="@id/image_item14"/>
+
+            <View
+                android:id="@+id/divider15"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_dividers"
+                android:background="@color/colorPrimary"
+                android:layout_below="@id/image_item15"/>
+
+            <View
+                android:id="@+id/divider16"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_dividers"
+                android:background="@color/colorPrimary"
+                android:layout_below="@id/image_item16"/>
+
+            <View
+                android:id="@+id/divider17"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_dividers"
+                android:background="@color/colorPrimary"
+                android:layout_below="@id/image_item17"/>
+
+            <View
+                android:id="@+id/divider18"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_dividers"
+                android:background="@color/colorPrimary"
+                android:layout_below="@id/image_item18"/>
+
+            <View
+                android:id="@+id/divider19"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_dividers"
+                android:background="@color/colorPrimary"
+                android:layout_below="@id/image_item19"/>
+
+            <View
+                android:id="@+id/divider20"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_dividers"
+                android:background="@color/colorPrimary"
+                android:layout_below="@id/image_item20"/>
+
             <ImageView
                 android:id="@+id/image_item1"
                 android:layout_width="@dimen/dimen_cart_image"
