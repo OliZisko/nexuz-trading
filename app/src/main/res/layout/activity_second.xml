@@ -120,7 +120,7 @@
                 android:id="@+id/image_item1"
                 android:layout_width="@dimen/dimen_cart_image"
                 android:layout_height="@dimen/dimen_cart_image"
-                android:src="@drawable/realmadrid"
+                android:src="@drawable/camisa_rea"
                 android:padding="@dimen/padding_title"
                 android:contentDescription="@string/content_Imageview"
                 />
@@ -161,7 +161,7 @@
                 android:layout_width="@dimen/dimen_cart_image"
                 android:layout_height="@dimen/dimen_cart_image"
                 android:layout_below="@id/image_item1"
-                android:src="@drawable/realmadrid"
+                android:src="@drawable/camisa_mil"
                 android:contentDescription="@string/content_Imageview"
                 android:padding="@dimen/padding_title"
                 />
@@ -203,7 +203,7 @@
                 android:layout_width="@dimen/dimen_cart_image"
                 android:layout_height="@dimen/dimen_cart_image"
                 android:layout_below="@id/image_item2"
-                android:src="@drawable/realmadrid"
+                android:src="@drawable/camisa_bar"
                 android:contentDescription="@string/content_Imageview"
                 android:padding="@dimen/padding_title"
                 />
@@ -245,7 +245,7 @@
                 android:layout_width="@dimen/dimen_cart_image"
                 android:layout_height="@dimen/dimen_cart_image"
                 android:layout_below="@id/image_item3"
-                android:src="@drawable/realmadrid"
+                android:src="@drawable/camisa_liv"
                 android:contentDescription="@string/content_Imageview"
                 android:padding="@dimen/padding_title"
                 />
@@ -287,7 +287,7 @@
                 android:layout_width="@dimen/dimen_cart_image"
                 android:layout_height="@dimen/dimen_cart_image"
                 android:layout_below="@id/image_item4"
-                android:src="@drawable/realmadrid"
+                android:src="@drawable/camisa_bay"
                 android:contentDescription="@string/content_Imageview"
                 android:padding="@dimen/padding_title"
                 />
@@ -329,7 +329,7 @@
                 android:layout_width="@dimen/dimen_cart_image"
                 android:layout_height="@dimen/dimen_cart_image"
                 android:layout_below="@id/image_item5"
-                android:src="@drawable/realmadrid"
+                android:src="@drawable/camisa_aja"
                 android:contentDescription="@string/content_Imageview"
                 android:padding="@dimen/padding_title"
                 />
@@ -371,7 +371,7 @@
                 android:layout_width="@dimen/dimen_cart_image"
                 android:layout_height="@dimen/dimen_cart_image"
                 android:layout_below="@id/image_item6"
-                android:src="@drawable/realmadrid"
+                android:src="@drawable/camisa_man"
                 android:contentDescription="@string/content_Imageview"
                 android:padding="@dimen/padding_title"
                 />
@@ -413,7 +413,7 @@
                 android:layout_width="@dimen/dimen_cart_image"
                 android:layout_height="@dimen/dimen_cart_image"
                 android:layout_below="@id/image_item7"
-                android:src="@drawable/realmadrid"
+                android:src="@drawable/camisa_juv"
                 android:contentDescription="@string/content_Imageview"
                 android:padding="@dimen/padding_title"
                 />
@@ -455,7 +455,7 @@
                 android:layout_width="@dimen/dimen_cart_image"
                 android:layout_height="@dimen/dimen_cart_image"
                 android:layout_below="@id/image_item8"
-                android:src="@drawable/realmadrid"
+                android:src="@drawable/camisa_ben"
                 android:contentDescription="@string/content_Imageview"
                 android:padding="@dimen/padding_title"
                 />
@@ -497,7 +497,7 @@
                 android:layout_width="@dimen/dimen_cart_image"
                 android:layout_height="@dimen/dimen_cart_image"
                 android:layout_below="@id/image_item9"
-                android:src="@drawable/realmadrid"
+                android:src="@drawable/camisa_por"
                 android:contentDescription="@string/content_Imageview"
                 android:padding="@dimen/padding_title"
                 />
@@ -539,7 +539,7 @@
                 android:layout_width="@dimen/dimen_cart_image"
                 android:layout_height="@dimen/dimen_cart_image"
                 android:layout_below="@id/image_item10"
-                android:src="@drawable/realmadrid"
+                android:src="@drawable/camisa_mar"
                 android:contentDescription="@string/content_Imageview"
                 android:padding="@dimen/padding_title"
                 />
@@ -581,7 +581,7 @@
                 android:layout_width="@dimen/dimen_cart_image"
                 android:layout_height="@dimen/dimen_cart_image"
                 android:layout_below="@id/image_item11"
-                android:src="@drawable/realmadrid"
+                android:src="@drawable/camisa_che"
                 android:contentDescription="@string/content_Imageview"
                 android:padding="@dimen/padding_title"
                 />
@@ -623,7 +623,7 @@
                 android:layout_width="@dimen/dimen_cart_image"
                 android:layout_height="@dimen/dimen_cart_image"
                 android:layout_below="@id/image_item12"
-                android:src="@drawable/realmadrid"
+                android:src="@drawable/camisa_dor"
                 android:contentDescription="@string/content_Imageview"
                 android:padding="@dimen/padding_title"
                 />
@@ -665,7 +665,7 @@
                 android:layout_width="@dimen/dimen_cart_image"
                 android:layout_height="@dimen/dimen_cart_image"
                 android:layout_below="@id/image_item13"
-                android:src="@drawable/realmadrid"
+                android:src="@drawable/camisa_atl"
                 android:contentDescription="@string/content_Imageview"
                 android:padding="@dimen/padding_title"
                 />
@@ -707,7 +707,7 @@
                 android:layout_width="@dimen/dimen_cart_image"
                 android:layout_height="@dimen/dimen_cart_image"
                 android:layout_below="@id/image_item14"
-                android:src="@drawable/realmadrid"
+                android:src="@drawable/camisa_cit"
                 android:contentDescription="@string/content_Imageview"
                 android:padding="@dimen/padding_title"
                 />
@@ -749,7 +749,7 @@
                 android:layout_width="@dimen/dimen_cart_image"
                 android:layout_height="@dimen/dimen_cart_image"
                 android:layout_below="@id/image_item15"
-                android:src="@drawable/realmadrid"
+                android:src="@drawable/camisa_lyo"
                 android:contentDescription="@string/content_Imageview"
                 android:padding="@dimen/padding_title"
                 />
@@ -791,7 +791,7 @@
                 android:layout_width="@dimen/dimen_cart_image"
                 android:layout_height="@dimen/dimen_cart_image"
                 android:layout_below="@id/image_item16"
-                android:src="@drawable/realmadrid"
+                android:src="@drawable/camisa_nap"
                 android:contentDescription="@string/content_Imageview"
                 android:padding="@dimen/padding_title"
                 />
@@ -833,7 +833,7 @@
                 android:layout_width="@dimen/dimen_cart_image"
                 android:layout_height="@dimen/dimen_cart_image"
                 android:layout_below="@id/image_item17"
-                android:src="@drawable/realmadrid"
+                android:src="@drawable/camisa_psg"
                 android:contentDescription="@string/content_Imageview"
                 android:padding="@dimen/padding_title"
                 />
@@ -875,7 +875,7 @@
                 android:layout_width="@dimen/dimen_cart_image"
                 android:layout_height="@dimen/dimen_cart_image"
                 android:layout_below="@id/image_item18"
-                android:src="@drawable/realmadrid"
+                android:src="@drawable/camisa_tot"
                 android:contentDescription="@string/content_Imageview"
                 android:padding="@dimen/padding_title"
                 />
@@ -917,7 +917,7 @@
                 android:layout_width="@dimen/dimen_cart_image"
                 android:layout_height="@dimen/dimen_cart_image"
                 android:layout_below="@id/image_item19"
-                android:src="@drawable/realmadrid"
+                android:src="@drawable/camisa_val"
                 android:contentDescription="@string/content_Imageview"
                 android:padding="@dimen/padding_title"
                 />
