@@ -3,6 +3,7 @@ package com.overdev.nexuztrading;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -11,6 +12,8 @@ public class SecondActivity extends AppCompatActivity {
     private TextView title, description;
     private ImageView image;
     Bundle data;
+
+    private static final String TAG = "MyActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +27,9 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra("title_team", title.getText());
         intent.putExtra("description_team", description.getText());
         intent.putExtra("image_team", "camisa_rea");
+
+        Log.d(TAG, "Alberto");
+
         startActivity(intent);
     }
 
