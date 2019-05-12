@@ -192,6 +192,7 @@
                 android:layout_height="@dimen/dimen_cart_image"
                 android:src="@drawable/camisa_rea"
                 android:padding="@dimen/padding_title"
+                android:onClick="sendData1"
                 android:contentDescription="@string/content_Imageview"
                 />
 
@@ -233,6 +234,7 @@
                 android:layout_below="@id/image_item1"
                 android:src="@drawable/camisa_mil"
                 android:contentDescription="@string/content_Imageview"
+                android:onClick="sendData2"
                 android:padding="@dimen/padding_title"
                 />
 
@@ -275,6 +277,7 @@
                 android:layout_below="@id/image_item2"
                 android:src="@drawable/camisa_bar"
                 android:contentDescription="@string/content_Imageview"
+                android:onClick="sendData3"
                 android:padding="@dimen/padding_title"
                 />
 
@@ -317,6 +320,7 @@
                 android:layout_below="@id/image_item3"
                 android:src="@drawable/camisa_liv"
                 android:contentDescription="@string/content_Imageview"
+                android:onClick="sendData4"
                 android:padding="@dimen/padding_title"
                 />
 
@@ -359,6 +363,7 @@
                 android:layout_below="@id/image_item4"
                 android:src="@drawable/camisa_bay"
                 android:contentDescription="@string/content_Imageview"
+                android:onClick="sendData5"
                 android:padding="@dimen/padding_title"
                 />
 
@@ -401,6 +406,7 @@
                 android:layout_below="@id/image_item5"
                 android:src="@drawable/camisa_aja"
                 android:contentDescription="@string/content_Imageview"
+                android:onClick="sendData6"
                 android:padding="@dimen/padding_title"
                 />
 
@@ -443,6 +449,7 @@
                 android:layout_below="@id/image_item6"
                 android:src="@drawable/camisa_man"
                 android:contentDescription="@string/content_Imageview"
+                android:onClick="sendData7"
                 android:padding="@dimen/padding_title"
                 />
 
@@ -485,6 +492,7 @@
                 android:layout_below="@id/image_item7"
                 android:src="@drawable/camisa_juv"
                 android:contentDescription="@string/content_Imageview"
+                android:onClick="sendData8"
                 android:padding="@dimen/padding_title"
                 />
 
@@ -527,6 +535,7 @@
                 android:layout_below="@id/image_item8"
                 android:src="@drawable/camisa_ben"
                 android:contentDescription="@string/content_Imageview"
+                android:onClick="sendData9"
                 android:padding="@dimen/padding_title"
                 />
 
@@ -569,6 +578,7 @@
                 android:layout_below="@id/image_item9"
                 android:src="@drawable/camisa_por"
                 android:contentDescription="@string/content_Imageview"
+                android:onClick="sendData10"
                 android:padding="@dimen/padding_title"
                 />
 
@@ -611,6 +621,7 @@
                 android:layout_below="@id/image_item10"
                 android:src="@drawable/camisa_mar"
                 android:contentDescription="@string/content_Imageview"
+                android:onClick="sendData11"
                 android:padding="@dimen/padding_title"
                 />
 
@@ -653,6 +664,7 @@
                 android:layout_below="@id/image_item11"
                 android:src="@drawable/camisa_che"
                 android:contentDescription="@string/content_Imageview"
+                android:onClick="sendData12"
                 android:padding="@dimen/padding_title"
                 />
 
@@ -695,6 +707,7 @@
                 android:layout_below="@id/image_item12"
                 android:src="@drawable/camisa_dor"
                 android:contentDescription="@string/content_Imageview"
+                android:onClick="sendData13"
                 android:padding="@dimen/padding_title"
                 />
 
@@ -737,6 +750,7 @@
                 android:layout_below="@id/image_item13"
                 android:src="@drawable/camisa_atl"
                 android:contentDescription="@string/content_Imageview"
+                android:onClick="sendData14"
                 android:padding="@dimen/padding_title"
                 />
 
@@ -779,6 +793,7 @@
                 android:layout_below="@id/image_item14"
                 android:src="@drawable/camisa_cit"
                 android:contentDescription="@string/content_Imageview"
+                android:onClick="sendData15"
                 android:padding="@dimen/padding_title"
                 />
 
@@ -821,6 +836,7 @@
                 android:layout_below="@id/image_item15"
                 android:src="@drawable/camisa_lyo"
                 android:contentDescription="@string/content_Imageview"
+                android:onClick="sendData16"
                 android:padding="@dimen/padding_title"
                 />
 
@@ -863,6 +879,7 @@
                 android:layout_below="@id/image_item16"
                 android:src="@drawable/camisa_nap"
                 android:contentDescription="@string/content_Imageview"
+                android:onClick="sendData17"
                 android:padding="@dimen/padding_title"
                 />
 
@@ -905,6 +922,7 @@
                 android:layout_below="@id/image_item17"
                 android:src="@drawable/camisa_psg"
                 android:contentDescription="@string/content_Imageview"
+                android:onClick="sendData18"
                 android:padding="@dimen/padding_title"
                 />
 
@@ -947,6 +965,7 @@
                 android:layout_below="@id/image_item18"
                 android:src="@drawable/camisa_tot"
                 android:contentDescription="@string/content_Imageview"
+                android:onClick="sendData19"
                 android:padding="@dimen/padding_title"
                 />
 
@@ -989,6 +1008,7 @@
                 android:layout_below="@id/image_item19"
                 android:src="@drawable/camisa_val"
                 android:contentDescription="@string/content_Imageview"
+                android:onClick="sendData20"
                 android:padding="@dimen/padding_title"
                 />
 
