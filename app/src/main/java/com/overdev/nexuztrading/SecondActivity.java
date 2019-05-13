@@ -14,9 +14,11 @@ import java.io.ByteArrayOutputStream;
 
 public class SecondActivity extends AppCompatActivity {
     private TextView title, description;
+
     public static final String EXTRA_REPLY_TITLE = "com.overdev.nexuztrading.extra.REPLY";
     public static final String EXTRA_REPLY_DESCRIPTION = "com.overdev.nexuztrading.extra.REPLY_1";
     public static final String EXTRA_REPLY_IMAGE = "com.overdev.nexuztrading.extra.REPLY_2";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
