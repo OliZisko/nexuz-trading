@@ -325,4 +325,243 @@ public class SecondActivity extends AppCompatActivity {
         finish();
     }
 
+    public void sendDetail1(View view) {
+        title = findViewById(R.id.text_item1);
+        description = findViewById(R.id.text_description1);
+        Intent intent = new Intent(this, Detail_Product.class);
+        String img = "camisa_rea";
+        intent.putExtra("titulo", title.getText());
+        intent.putExtra("descripcion", description.getText());
+        intent.putExtra("imagen", img);
+        startActivity(intent);
+
+    }
+
+    public void sendDetail2(View view) {
+        title = findViewById(R.id.text_item2);
+        description = findViewById(R.id.text_description2);
+        Intent intent = new Intent(this, Detail_Product.class);
+        String img = "camisa_mil";
+        intent.putExtra("titulo", title.getText());
+        intent.putExtra("descripcion", description.getText());
+        intent.putExtra("imagen", img);
+        startActivity(intent);
+
+    }
+
+    public void sendDetail3(View view) {
+        title = findViewById(R.id.text_item3);
+        description = findViewById(R.id.text_description3);
+        Intent intent = new Intent(this, Detail_Product.class);
+        String img = "camisa_bar";
+        intent.putExtra("titulo", title.getText());
+        intent.putExtra("descripcion", description.getText());
+        intent.putExtra("imagen", img);
+        startActivity(intent);
+
+    }
+
+    public void sendDetail4(View view) {
+        title = findViewById(R.id.text_item4);
+        description = findViewById(R.id.text_description4);
+        Intent intent = new Intent(this, Detail_Product.class);
+        String img = "camisa_liv";
+        intent.putExtra("titulo", title.getText());
+        intent.putExtra("descripcion", description.getText());
+        intent.putExtra("imagen", img);
+        startActivity(intent);
+
+    }
+
+    public void sendDetail5(View view) {
+        title = findViewById(R.id.text_item5);
+        description = findViewById(R.id.text_description5);
+        Intent intent = new Intent(this, Detail_Product.class);
+        String img = "camisa_bay";
+        intent.putExtra("titulo", title.getText());
+        intent.putExtra("descripcion", description.getText());
+        intent.putExtra("imagen", img);
+        startActivity(intent);
+
+    }
+
+    public void sendDetail6(View view) {
+        title = findViewById(R.id.text_item6);
+        description = findViewById(R.id.text_description6);
+        Intent intent = new Intent(this, Detail_Product.class);
+        String img = "camisa_aja";
+        intent.putExtra("titulo", title.getText());
+        intent.putExtra("descripcion", description.getText());
+        intent.putExtra("imagen", img);
+        startActivity(intent);
+
+    }
+
+    public void sendDetail7(View view) {
+        title = findViewById(R.id.text_item7);
+        description = findViewById(R.id.text_description7);
+        Intent intent = new Intent(this, Detail_Product.class);
+        String img = "camisa_man";
+        intent.putExtra("titulo", title.getText());
+        intent.putExtra("descripcion", description.getText());
+        intent.putExtra("imagen", img);
+        startActivity(intent);
+
+    }
+
+    public void sendDetail8(View view) {
+        title = findViewById(R.id.text_item8);
+        description = findViewById(R.id.text_description8);
+        Intent intent = new Intent(this, Detail_Product.class);
+        String img = "camisa_juv";
+        intent.putExtra("titulo", title.getText());
+        intent.putExtra("descripcion", description.getText());
+        intent.putExtra("imagen", img);
+        startActivity(intent);
+
+    }
+
+    public void sendDetail9(View view) {
+        title = findViewById(R.id.text_item9);
+        description = findViewById(R.id.text_description9);
+        Intent intent = new Intent(this, Detail_Product.class);
+        String img = "camisa_ben";
+        intent.putExtra("titulo", title.getText());
+        intent.putExtra("descripcion", description.getText());
+        intent.putExtra("imagen", img);
+        startActivity(intent);
+
+    }
+
+    public void sendDetail10(View view) {
+        title = findViewById(R.id.text_item10);
+        description = findViewById(R.id.text_description10);
+        Intent intent = new Intent(this, Detail_Product.class);
+        String img = "camisa_por";
+        intent.putExtra("titulo", title.getText());
+        intent.putExtra("descripcion", description.getText());
+        intent.putExtra("imagen", img);
+        startActivity(intent);
+
+    }
+
+    public void sendDetail11(View view) {
+        title = findViewById(R.id.text_item11);
+        description = findViewById(R.id.text_description11);
+        Intent intent = new Intent(this, Detail_Product.class);
+        String img = "camisa_mar";
+        intent.putExtra("titulo", title.getText());
+        intent.putExtra("descripcion", description.getText());
+        intent.putExtra("imagen", img);
+        startActivity(intent);
+
+    }
+
+    public void sendDetail12(View view) {
+        title = findViewById(R.id.text_item12);
+        description = findViewById(R.id.text_description12);
+        Intent intent = new Intent(this, Detail_Product.class);
+        String img = "camisa_che";
+        intent.putExtra("titulo", title.getText());
+        intent.putExtra("descripcion", description.getText());
+        intent.putExtra("imagen", img);
+        startActivity(intent);
+
+    }
+
+    public void sendDetail13(View view) {
+        title = findViewById(R.id.text_item13);
+        description = findViewById(R.id.text_description13);
+        Intent intent = new Intent(this, Detail_Product.class);
+        String img = "camisa_dor";
+        intent.putExtra("titulo", title.getText());
+        intent.putExtra("descripcion", description.getText());
+        intent.putExtra("imagen", img);
+        startActivity(intent);
+
+    }
+
+    public void sendDetail14(View view) {
+        title = findViewById(R.id.text_item14);
+        description = findViewById(R.id.text_description14);
+        Intent intent = new Intent(this, Detail_Product.class);
+        String img = "camisa_atl";
+        intent.putExtra("titulo", title.getText());
+        intent.putExtra("descripcion", description.getText());
+        intent.putExtra("imagen", img);
+        startActivity(intent);
+
+    }
+
+    public void sendDetail15(View view) {
+        title = findViewById(R.id.text_item15);
+        description = findViewById(R.id.text_description15);
+        Intent intent = new Intent(this, Detail_Product.class);
+        String img = "camisa_cit";
+        intent.putExtra("titulo", title.getText());
+        intent.putExtra("descripcion", description.getText());
+        intent.putExtra("imagen", img);
+        startActivity(intent);
+
+    }
+
+    public void sendDetail16(View view) {
+        title = findViewById(R.id.text_item16);
+        description = findViewById(R.id.text_description16);
+        Intent intent = new Intent(this, Detail_Product.class);
+        String img = "camisa_lyo";
+        intent.putExtra("titulo", title.getText());
+        intent.putExtra("descripcion", description.getText());
+        intent.putExtra("imagen", img);
+        startActivity(intent);
+
+    }
+
+    public void sendDetail17(View view) {
+        title = findViewById(R.id.text_item17);
+        description = findViewById(R.id.text_description17);
+        Intent intent = new Intent(this, Detail_Product.class);
+        String img = "camisa_nap";
+        intent.putExtra("titulo", title.getText());
+        intent.putExtra("descripcion", description.getText());
+        intent.putExtra("imagen", img);
+        startActivity(intent);
+
+    }
+
+    public void sendDetail18(View view) {
+        title = findViewById(R.id.text_item18);
+        description = findViewById(R.id.text_description18);
+        Intent intent = new Intent(this, Detail_Product.class);
+        String img = "camisa_psg";
+        intent.putExtra("titulo", title.getText());
+        intent.putExtra("descripcion", description.getText());
+        intent.putExtra("imagen", img);
+        startActivity(intent);
+
+    }
+
+    public void sendDetail19(View view) {
+        title = findViewById(R.id.text_item19);
+        description = findViewById(R.id.text_description19);
+        Intent intent = new Intent(this, Detail_Product.class);
+        String img = "camisa_tot";
+        intent.putExtra("titulo", title.getText());
+        intent.putExtra("descripcion", description.getText());
+        intent.putExtra("imagen", img);
+        startActivity(intent);
+
+    }
+
+    public void sendDetail20(View view) {
+        title = findViewById(R.id.text_item20);
+        description = findViewById(R.id.text_description20);
+        Intent intent = new Intent(this, Detail_Product.class);
+        String img = "camisa_val";
+        intent.putExtra("titulo", title.getText());
+        intent.putExtra("descripcion", description.getText());
+        intent.putExtra("imagen", img);
+        startActivity(intent);
+
+    }
 }
