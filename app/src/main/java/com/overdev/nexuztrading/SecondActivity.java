@@ -1,6 +1,8 @@
 package com.overdev.nexuztrading;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -8,10 +10,18 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.io.ByteArrayOutputStream;
+
 public class SecondActivity extends AppCompatActivity {
     private TextView title, description;
     private ImageView image;
     Bundle data;
+    public static final String EXTRA_REPLY_TITLE =
+            "com.overdev.nexuztrading.extra.REPLY";
+
+    public static final String EXTRA_REPLY_DESCRIPTION = "com.overdev.nexuztrading.extra.REPLY_1";
+
+    public static final String EXTRA_REPLY_IMAGE = "com.overdev.nexuztrading.extra.REPLY_2";
 
     private static final String TAG = "MyActivity";
     @Override
@@ -23,58 +33,76 @@ public class SecondActivity extends AppCompatActivity {
     public void sendData1(View view) {
         title = findViewById(R.id.text_item1);
         description = findViewById(R.id.text_description1);
+        Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.camisa_rea);
+        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+        bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
+        byte[] byteArray = stream.toByteArray();
         Intent intent = new Intent(this, MainActivity.class);
-        intent.putExtra("title_team", title.getText());
-        intent.putExtra("description_team", description.getText());
-        intent.putExtra("image_team", "camisa_rea");
-
-        Log.d(TAG, "Alberto");
-
-        startActivity(intent);
+        intent.putExtra(EXTRA_REPLY_TITLE, title.getText());
+        intent.putExtra(EXTRA_REPLY_DESCRIPTION, description.getText());
+        intent.putExtra(EXTRA_REPLY_IMAGE, byteArray);
+        setResult(RESULT_OK, intent);
+        finish();
     }
 
     public void sendData2(View view) {
         title = findViewById(R.id.text_item2);
         description = findViewById(R.id.text_description2);
-        image = findViewById(R.id.image_item2);
+        Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.camisa_mil);
+        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+        bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
+        byte[] byteArray = stream.toByteArray();
         Intent intent = new Intent(this, MainActivity.class);
-        intent.putExtra("title_team", title.getText());
-        intent.putExtra("description_team", description.getText());
-        intent.putExtra("image_team", "camisa_mil");
-        startActivity(intent);
+        intent.putExtra(EXTRA_REPLY_TITLE, title.getText());
+        intent.putExtra(EXTRA_REPLY_DESCRIPTION, description.getText());
+        intent.putExtra(EXTRA_REPLY_IMAGE, byteArray);
+        setResult(RESULT_OK, intent);
+        finish();
     }
 
     public void sendData3(View view) {
         title = findViewById(R.id.text_item3);
         description = findViewById(R.id.text_description3);
-        image = findViewById(R.id.image_item3);
+        Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.camisa_bar);
+        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+        bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
+        byte[] byteArray = stream.toByteArray();
         Intent intent = new Intent(this, MainActivity.class);
-        intent.putExtra("title_team", title.getText());
-        intent.putExtra("description_team", description.getText());
-        intent.putExtra("image_team", "camisa_bar");
-        startActivity(intent);
+        intent.putExtra(EXTRA_REPLY_TITLE, title.getText());
+        intent.putExtra(EXTRA_REPLY_DESCRIPTION, description.getText());
+        intent.putExtra(EXTRA_REPLY_IMAGE, byteArray);
+        setResult(RESULT_OK, intent);
+        finish();
     }
 
     public void sendData4(View view) {
         title = findViewById(R.id.text_item4);
         description = findViewById(R.id.text_description4);
-        image = findViewById(R.id.image_item4);
+        Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.camisa_liv);
+        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+        bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
+        byte[] byteArray = stream.toByteArray();
         Intent intent = new Intent(this, MainActivity.class);
-        intent.putExtra("title_team", title.getText());
-        intent.putExtra("description_team", description.getText());
-        intent.putExtra("image_team", "camisa_liv");
-        startActivity(intent);
+        intent.putExtra(EXTRA_REPLY_TITLE, title.getText());
+        intent.putExtra(EXTRA_REPLY_DESCRIPTION, description.getText());
+        intent.putExtra(EXTRA_REPLY_IMAGE, byteArray);
+        setResult(RESULT_OK, intent);
+        finish();
     }
 
     public void sendData5(View view) {
         title = findViewById(R.id.text_item5);
         description = findViewById(R.id.text_description5);
-        image = findViewById(R.id.image_item5);
+        Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.camisa_bay);
+        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+        bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
+        byte[] byteArray = stream.toByteArray();
         Intent intent = new Intent(this, MainActivity.class);
-        intent.putExtra("title_team", title.getText());
-        intent.putExtra("description_team", description.getText());
-        intent.putExtra("image_team", "camisa_bay");
-        startActivity(intent);
+        intent.putExtra(EXTRA_REPLY_TITLE, title.getText());
+        intent.putExtra(EXTRA_REPLY_DESCRIPTION, description.getText());
+        intent.putExtra(EXTRA_REPLY_IMAGE, byteArray);
+        setResult(RESULT_OK, intent);
+        finish();
     }
 
     public void sendData6(View view) {
