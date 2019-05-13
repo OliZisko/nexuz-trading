@@ -209,6 +209,7 @@
                 android:layout_marginTop="@dimen/margin_top"
                 android:layout_toEndOf="@id/image_item1"
                 android:layout_marginStart="@dimen/margin_left_title"
+                android:onClick="sendDetail1"
                 />
 
             <TextView
@@ -252,6 +253,7 @@
                 android:layout_marginTop="@dimen/margin_top"
                 android:layout_marginStart="@dimen/margin_left_title"
                 android:layout_toEndOf="@id/image_item2"
+                android:onClick="sendDetail2"
                 />
 
             <TextView
@@ -295,6 +297,7 @@
                 android:layout_marginTop="@dimen/margin_top"
                 android:layout_marginStart="@dimen/margin_left_title"
                 android:layout_toEndOf="@id/image_item3"
+                android:onClick="sendDetail3"
                 />
 
             <TextView
@@ -338,6 +341,7 @@
                 android:layout_marginTop="@dimen/margin_top"
                 android:layout_marginStart="@dimen/margin_left_title"
                 android:layout_toEndOf="@id/image_item4"
+                android:onClick="sendDetail4"
                 />
 
             <TextView
@@ -381,6 +385,7 @@
                 android:layout_marginTop="@dimen/margin_top"
                 android:layout_marginStart="@dimen/margin_left_title"
                 android:layout_toEndOf="@id/image_item5"
+                android:onClick="sendDetail5"
                 />
 
             <TextView
@@ -424,6 +429,7 @@
                 android:layout_marginTop="@dimen/margin_top"
                 android:layout_marginStart="@dimen/margin_left_title"
                 android:layout_toEndOf="@id/image_item6"
+                android:onClick="sendDetail6"
                 />
 
             <TextView
@@ -467,6 +473,7 @@
                 android:layout_marginTop="@dimen/margin_top"
                 android:layout_marginStart="@dimen/margin_left_title"
                 android:layout_toEndOf="@id/image_item7"
+                android:onClick="sendDetail7"
                 />
 
             <TextView
@@ -510,6 +517,7 @@
                 android:layout_marginTop="@dimen/margin_top"
                 android:layout_marginStart="@dimen/margin_left_title"
                 android:layout_toEndOf="@id/image_item8"
+                android:onClick="sendDetail8"
                 />
 
             <TextView
@@ -553,6 +561,7 @@
                 android:layout_marginTop="@dimen/margin_top"
                 android:layout_marginStart="@dimen/margin_left_title"
                 android:layout_toEndOf="@id/image_item9"
+                android:onClick="sendDetail9"
                 />
 
             <TextView
@@ -596,6 +605,7 @@
                 android:layout_marginTop="@dimen/margin_top"
                 android:layout_marginStart="@dimen/margin_left_title"
                 android:layout_toEndOf="@id/image_item10"
+                android:onClick="sendDetail10"
                 />
 
             <TextView
@@ -639,6 +649,7 @@
                 android:layout_marginTop="@dimen/margin_top"
                 android:layout_marginStart="@dimen/margin_left_title"
                 android:layout_toEndOf="@id/image_item11"
+                android:onClick="sendDetail11"
                 />
 
             <TextView
@@ -682,6 +693,7 @@
                 android:layout_marginTop="@dimen/margin_top"
                 android:layout_marginStart="@dimen/margin_left_title"
                 android:layout_toEndOf="@id/image_item12"
+                android:onClick="sendDetail12"
                 />
 
             <TextView
@@ -725,6 +737,7 @@
                 android:layout_marginTop="@dimen/margin_top"
                 android:layout_marginStart="@dimen/margin_left_title"
                 android:layout_toEndOf="@id/image_item13"
+                android:onClick="sendDetail13"
                 />
 
             <TextView
@@ -768,6 +781,7 @@
                 android:layout_marginTop="@dimen/margin_top"
                 android:layout_marginStart="@dimen/margin_left_title"
                 android:layout_toEndOf="@id/image_item14"
+                android:onClick="sendDetail14"
                 />
 
             <TextView
@@ -811,6 +825,7 @@
                 android:layout_marginTop="@dimen/margin_top"
                 android:layout_marginStart="@dimen/margin_left_title"
                 android:layout_toEndOf="@id/image_item15"
+                android:onClick="sendDetail15"
                 />
 
             <TextView
@@ -854,6 +869,7 @@
                 android:layout_marginTop="@dimen/margin_top"
                 android:layout_marginStart="@dimen/margin_left_title"
                 android:layout_toEndOf="@id/image_item16"
+                android:onClick="sendDetail16"
                 />
 
             <TextView
@@ -897,6 +913,7 @@
                 android:layout_marginTop="@dimen/margin_top"
                 android:layout_marginStart="@dimen/margin_left_title"
                 android:layout_toEndOf="@id/image_item17"
+                android:onClick="sendDetail17"
                 />
 
             <TextView
@@ -940,6 +957,7 @@
                 android:layout_marginTop="@dimen/margin_top"
                 android:layout_marginStart="@dimen/margin_left_title"
                 android:layout_toEndOf="@id/image_item18"
+                android:onClick="sendDetail18"
                 />
 
             <TextView
@@ -983,6 +1001,7 @@
                 android:layout_marginTop="@dimen/margin_top"
                 android:layout_marginStart="@dimen/margin_left_title"
                 android:layout_toEndOf="@id/image_item19"
+                android:onClick="sendDetail19"
                 />
 
             <TextView
@@ -1026,6 +1045,7 @@
                 android:layout_marginTop="@dimen/margin_top"
                 android:layout_marginStart="@dimen/margin_left_title"
                 android:layout_toEndOf="@id/image_item20"
+                android:onClick="sendDetail20"
                 />
 
             <TextView
