@@ -12,18 +12,17 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Detail_Product extends AppCompatActivity {
-
-
-    private TextView title;
-    private TextView description;
-    private ImageView image;
+    private String titulo, descripcion, imagen, foto;
 
     private static final String TAG = "DetailActivity";
-
+    public static final String EXTRA_REPLY_TITLE = "com.overdev.nexuztrading.extra.REPLY";
+    public static final String EXTRA_REPLY_DESCRIPTION = "com.overdev.nexuztrading.extra.REPLY_1";
+    public static final String EXTRA_REPLY_IMAGE = "com.overdev.nexuztrading.extra.REPLY_2";
     public static final int TEXT_REQUEST = 1;
 
 
@@ -31,24 +30,98 @@ public class Detail_Product extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail__product);
-
-        String titulo = getIntent().getStringExtra("titulo");
-        String descripcion = getIntent().getStringExtra("descripcion");
-        String imagen = getIntent().getStringExtra("imagen");
-        Log.d("EJEMPLO", "A VER SI LLEGO " + titulo +" - " + descripcion +" - " + imagen);
-
+        titulo = getIntent().getStringExtra("titulo");
+        descripcion = getIntent().getStringExtra("descripcion");
+        imagen = getIntent().getStringExtra("imagen");
         TextView title = findViewById(R.id.titulo);
         title.setText(titulo);
         TextView description = findViewById(R.id.descripcion);
         description.setText(descripcion);
+        TextView history = findViewById(R.id.history);
         ImageView image = findViewById(R.id.imgFoto);
-        String foto = imagen;
+        foto = imagen;
+        switch (imagen){
+            case "camisa_aja_nc":
+                history.setText("Hola que tal AJA");
+                break;
+
+            case "camisa_atl_nc":
+                history.setText("Hola que tal ATL");
+                break;
+
+            case "camisa_bar_nc":
+                history.setText("Hola que tal BAR");
+                break;
+
+            case "camisa_bay_nc":
+                history.setText("Hola que tal BAY");
+                break;
+
+            case "camisa_ben_nc":
+                history.setText("Hola que tal BEN");
+                break;
+
+            case "camisa_che_nc":
+                history.setText("Hola que tal CHE");
+                break;
+
+            case "camisa_cit_nc":
+                history.setText("Hola que tal CIT");
+                break;
+
+            case "camisa_dor_nc":
+                history.setText("Hola que tal DOR");
+                break;
+
+            case "camisa_juv_nc":
+                history.setText("Hola que tal JUV");
+                break;
+
+            case "camisa_liv_nc":
+                history.setText("Hola que tal LIV");
+                break;
+
+            case "camisa_lyo_nc":
+                history.setText("Hola que tal LYO");
+                break;
+
+            case "camisa_man_nc":
+                history.setText("Hola que tal MAN");
+                break;
+
+            case "camisa_mar_nc":
+                history.setText("Hola que tal MAR");
+                break;
+
+            case "camisa_mil_nc":
+                history.setText("Hola que tal MIL");
+                break;
+
+            case "camisa_nap_nc":
+                history.setText("Hola que tal NAP");
+                break;
+
+            case "camisa_por_nc":
+                history.setText("Hola que tal POR");
+                break;
+
+            case "camisa_psg_nc":
+                history.setText("Hola que tal PSG");
+                break;
+
+            case "camisa_rea_nc":
+                history.setText("Hola que tal REA");
+                break;
+
+            case "camisa_tot_nc":
+                history.setText("Hola que tal TOT");
+                break;
+
+            case "camisa_val_nc":
+                history.setText("Hola que tal VAL");
+                break;
+        }
         image.setImageResource(getResources().getIdentifier(foto, "drawable", getPackageName()));
 
-
-
-
-
     }
-
 }

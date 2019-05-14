@@ -48,61 +48,111 @@ public class MainActivity extends AppCompatActivity {
                     title = findViewById(R.id.text_item1);
                     description = findViewById(R.id.text_description1);
                     image = findViewById(R.id.image_item1);
-                    initialSettings(title, description, image);
+                    title.setText("");
+                    description.setText("No hay producto seleccionado");
+                    image.setImageResource(getResources().getIdentifier("no_product", "drawable", getPackageName()));
+                    shopList.add(title);
+                    imageList.add(image);
+                    detailList.add(description);
                     break;
                 case 1:
                     title = findViewById(R.id.text_item2);
                     description = findViewById(R.id.text_description2);
                     image = findViewById(R.id.image_item2);
-                    initialSettings(title, description, image);
+                    title.setText("");
+                    description.setText("No hay producto seleccionado");
+                    image.setImageResource(getResources().getIdentifier("no_product", "drawable", getPackageName()));
+                    shopList.add(title);
+                    imageList.add(image);
+                    detailList.add(description);
                     break;
                 case 2:
                     title = findViewById(R.id.text_item3);
                     description = findViewById(R.id.text_description3);
                     image = findViewById(R.id.image_item3);
-                    initialSettings(title, description, image);
+                    title.setText("");
+                    description.setText("No hay producto seleccionado");
+                    image.setImageResource(getResources().getIdentifier("no_product", "drawable", getPackageName()));
+                    shopList.add(title);
+                    imageList.add(image);
+                    detailList.add(description);
                     break;
                 case 3:
                     title = findViewById(R.id.text_item4);
                     description = findViewById(R.id.text_description4);
                     image = findViewById(R.id.image_item4);
-                    initialSettings(title, description, image);
+                    title.setText("");
+                    description.setText("No hay producto seleccionado");
+                    image.setImageResource(getResources().getIdentifier("no_product", "drawable", getPackageName()));
+                    shopList.add(title);
+                    imageList.add(image);
+                    detailList.add(description);
                     break;
                 case 4:
                     title = findViewById(R.id.text_item5);
                     description = findViewById(R.id.text_description5);
                     image = findViewById(R.id.image_item5);
-                    initialSettings(title, description, image);
+                    title.setText("");
+                    description.setText("No hay producto seleccionado");
+                    image.setImageResource(getResources().getIdentifier("no_product", "drawable", getPackageName()));
+                    shopList.add(title);
+                    imageList.add(image);
+                    detailList.add(description);
                     break;
                 case 5:
                     title = findViewById(R.id.text_item6);
                     description = findViewById(R.id.text_description6);
                     image = findViewById(R.id.image_item6);
-                    initialSettings(title, description, image);
+                    title.setText("");
+                    description.setText("No hay producto seleccionado");
+                    image.setImageResource(getResources().getIdentifier("no_product", "drawable", getPackageName()));
+                    shopList.add(title);
+                    imageList.add(image);
+                    detailList.add(description);
                     break;
                 case 6:
                     title = findViewById(R.id.text_item7);
                     description = findViewById(R.id.text_description7);
                     image = findViewById(R.id.image_item7);
-                    initialSettings(title, description, image);
+                    title.setText("");
+                    description.setText("No hay producto seleccionado");
+                    image.setImageResource(getResources().getIdentifier("no_product", "drawable", getPackageName()));
+                    shopList.add(title);
+                    imageList.add(image);
+                    detailList.add(description);
                     break;
                 case 7:
                     title = findViewById(R.id.text_item8);
                     description = findViewById(R.id.text_description8);
                     image = findViewById(R.id.image_item8);
-                    initialSettings(title, description, image);
+                    title.setText("");
+                    description.setText("No hay producto seleccionado");
+                    image.setImageResource(getResources().getIdentifier("no_product", "drawable", getPackageName()));
+                    shopList.add(title);
+                    imageList.add(image);
+                    detailList.add(description);
                     break;
                 case 8:
                     title = findViewById(R.id.text_item9);
                     description = findViewById(R.id.text_description9);
                     image = findViewById(R.id.image_item9);
-                    initialSettings(title, description, image);
+                    title.setText("");
+                    description.setText("No hay producto seleccionado");
+                    image.setImageResource(getResources().getIdentifier("no_product", "drawable", getPackageName()));
+                    shopList.add(title);
+                    imageList.add(image);
+                    detailList.add(description);
                     break;
                 case 9:
                     title = findViewById(R.id.text_item10);
                     description = findViewById(R.id.text_description10);
                     image = findViewById(R.id.image_item10);
-                    initialSettings(title, description, image);
+                    title.setText("");
+                    description.setText("No hay producto seleccionado");
+                    image.setImageResource(getResources().getIdentifier("no_product", "drawable", getPackageName()));
+                    shopList.add(title);
+                    imageList.add(image);
+                    detailList.add(description);
                     break;
             }
         }
@@ -155,7 +205,6 @@ public class MainActivity extends AppCompatActivity {
                 String title_team = data.getStringExtra(SecondActivity.EXTRA_REPLY_TITLE);
                 String description_team = data.getStringExtra(SecondActivity.EXTRA_REPLY_DESCRIPTION);
                 byte[] byteArray = data.getByteArrayExtra(SecondActivity.EXTRA_REPLY_IMAGE);
-
                 switch (title_team){
                     case "FC Real Madrid":
                         setValues(title_team, description_team, byteArray);

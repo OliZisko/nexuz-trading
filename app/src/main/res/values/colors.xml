@@ -8,4 +8,5 @@
     <color name="button_float">#22587A</color>
     <color name="bar_start">#00B7D3</color>
     <color name="bar_end">#00ffffff</color>
+    <color name="text_blue">#0093FF</color>
 </resources>
