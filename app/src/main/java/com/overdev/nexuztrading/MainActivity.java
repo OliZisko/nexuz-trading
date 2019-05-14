@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,120 +39,107 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        TextView title_name = findViewById(R.id.text_item1);
+
         for (int i = 0; i < 10; i++){
             switch (i){
                 case 0:
                     title = findViewById(R.id.text_item1);
                     description = findViewById(R.id.text_description1);
                     image = findViewById(R.id.image_item1);
-                    title.setText("");
-                    description.setText("");
-                    image.setVisibility(View.INVISIBLE);
-                    shopList.add(title);
-                    imageList.add(image);
-                    detailList.add(description);
+                    initialSettings(title, description, image);
                     break;
                 case 1:
                     title = findViewById(R.id.text_item2);
                     description = findViewById(R.id.text_description2);
                     image = findViewById(R.id.image_item2);
-                    title.setText("");
-                    description.setText("");
-                    image.setVisibility(View.INVISIBLE);
-                    shopList.add(title);
-                    imageList.add(image);
-                    detailList.add(description);
+                    initialSettings(title, description, image);
                     break;
                 case 2:
                     title = findViewById(R.id.text_item3);
                     description = findViewById(R.id.text_description3);
                     image = findViewById(R.id.image_item3);
-                    title.setText("");
-                    description.setText("");
-                    image.setVisibility(View.INVISIBLE);
-                    shopList.add(title);
-                    imageList.add(image);
-                    detailList.add(description);
+                    initialSettings(title, description, image);
                     break;
                 case 3:
                     title = findViewById(R.id.text_item4);
                     description = findViewById(R.id.text_description4);
                     image = findViewById(R.id.image_item4);
-                    title.setText("");
-                    description.setText("");
-                    image.setVisibility(View.INVISIBLE);
-                    shopList.add(title);
-                    imageList.add(image);
-                    detailList.add(description);
+                    initialSettings(title, description, image);
                     break;
                 case 4:
                     title = findViewById(R.id.text_item5);
                     description = findViewById(R.id.text_description5);
                     image = findViewById(R.id.image_item5);
-                    title.setText("");
-                    description.setText("");
-                    image.setVisibility(View.INVISIBLE);
-                    shopList.add(title);
-                    imageList.add(image);
-                    detailList.add(description);
+                    initialSettings(title, description, image);
                     break;
                 case 5:
                     title = findViewById(R.id.text_item6);
                     description = findViewById(R.id.text_description6);
                     image = findViewById(R.id.image_item6);
-                    title.setText("");
-                    description.setText("");
-                    image.setVisibility(View.INVISIBLE);
-                    shopList.add(title);
-                    imageList.add(image);
-                    detailList.add(description);
+                    initialSettings(title, description, image);
                     break;
                 case 6:
                     title = findViewById(R.id.text_item7);
                     description = findViewById(R.id.text_description7);
                     image = findViewById(R.id.image_item7);
-                    title.setText("");
-                    description.setText("");
-                    image.setVisibility(View.INVISIBLE);
-                    shopList.add(title);
-                    imageList.add(image);
-                    detailList.add(description);
+                    initialSettings(title, description, image);
                     break;
                 case 7:
                     title = findViewById(R.id.text_item8);
                     description = findViewById(R.id.text_description8);
                     image = findViewById(R.id.image_item8);
-                    title.setText("");
-                    description.setText("");
-                    image.setVisibility(View.INVISIBLE);
-                    shopList.add(title);
-                    imageList.add(image);
-                    detailList.add(description);
+                    initialSettings(title, description, image);
                     break;
                 case 8:
                     title = findViewById(R.id.text_item9);
                     description = findViewById(R.id.text_description9);
                     image = findViewById(R.id.image_item9);
-                    title.setText("");
-                    description.setText("");
-                    image.setVisibility(View.INVISIBLE);
-                    shopList.add(title);
-                    imageList.add(image);
-                    detailList.add(description);
+                    initialSettings(title, description, image);
                     break;
                 case 9:
                     title = findViewById(R.id.text_item10);
                     description = findViewById(R.id.text_description10);
                     image = findViewById(R.id.image_item10);
-                    title.setText("");
-                    description.setText("");
-                    image.setVisibility(View.INVISIBLE);
-                    shopList.add(title);
-                    imageList.add(image);
-                    detailList.add(description);
+                    initialSettings(title, description, image);
                     break;
             }
         }
+
+        if (savedInstanceState != null) {
+            boolean isVisibleText = savedInstanceState.getBoolean("visible_title");
+            boolean isVisibleDesc = savedInstanceState.getBoolean("visible_title");
+            if (isVisibleText && isVisibleDesc) {
+                for (TextView title_save: shopList) {
+                    title_save.setText(savedInstanceState.getString("text_title"));
+                }
+                /*for (TextView description_save: shopList) {
+                    description_save.setText(savedInstanceState.getString("text_description"));
+                }*/
+            }
+        }
+
+        if (savedInstanceState != null) {
+            boolean isVisible =
+                    savedInstanceState.getBoolean("reply_visible");
+            // Show both the header and the message views. If isVisible is
+            // false or missing from the bundle, use the default layout.
+            if (isVisible) {
+                title_name.setVisibility(View.VISIBLE);
+                title_name.setText(savedInstanceState.getString("reply_text"));
+                title_name.setVisibility(View.VISIBLE);
+            }
+        }
+    }
+
+    public void initialSettings(TextView title, TextView description, ImageView image){
+        title.setText("");
+        description.setText("");
+        //image.setVisibility(View.INVISIBLE);
+        shopList.add(title);
+        imageList.add(image);
+        detailList.add(description);
     }
 
     public void showSecondActivity(View view) {
@@ -267,6 +255,30 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG, "Completo");
             }
             count++;
+        }
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        /*for (TextView title_team: shopList) {
+            if(title_team.getVisibility() == View.VISIBLE){
+                outState.putBoolean("reply_visible", true);
+                outState.putString("reply_text", title_team.getText().toString());
+            }
+        }*/
+
+        /*for (TextView description_team: detailList) {
+            if(description_team.getVisibility() == View.VISIBLE){
+                outState.putBoolean("visible_description", true);
+                outState.putString("text_description", description_team.getText().toString());
+            }
+        }*/
+        TextView title_name = findViewById(R.id.text_item1);
+
+        if(title_name.getVisibility() == View.VISIBLE){
+            outState.putBoolean("reply_visible", true);
+            outState.putString("reply_text", title_name.getText().toString());
         }
     }
 }
