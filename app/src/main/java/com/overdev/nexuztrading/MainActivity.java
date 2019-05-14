@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView title;
     private TextView description;
-    private ImageView image;
+    private ImageView image, delete;
 
     private static final String TAG = "MyActivity";
 
@@ -44,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
                     title = findViewById(R.id.text_item1);
                     description = findViewById(R.id.text_description1);
                     image = findViewById(R.id.image_item1);
+                    delete = findViewById(R.id.image_delete1);
+                    delete.setVisibility(View.INVISIBLE);
                     title.setText("");
                     description.setText("No hay producto seleccionado");
                     image.setImageResource(getResources().getIdentifier("no_product", "drawable", getPackageName()));
@@ -55,6 +57,8 @@ public class MainActivity extends AppCompatActivity {
                     title = findViewById(R.id.text_item2);
                     description = findViewById(R.id.text_description2);
                     image = findViewById(R.id.image_item2);
+                    delete = findViewById(R.id.image_delete2);
+                    delete.setVisibility(View.INVISIBLE);
                     title.setText("");
                     description.setText("No hay producto seleccionado");
                     image.setImageResource(getResources().getIdentifier("no_product", "drawable", getPackageName()));
@@ -66,6 +70,8 @@ public class MainActivity extends AppCompatActivity {
                     title = findViewById(R.id.text_item3);
                     description = findViewById(R.id.text_description3);
                     image = findViewById(R.id.image_item3);
+                    delete = findViewById(R.id.image_delete3);
+                    delete.setVisibility(View.INVISIBLE);
                     title.setText("");
                     description.setText("No hay producto seleccionado");
                     image.setImageResource(getResources().getIdentifier("no_product", "drawable", getPackageName()));
@@ -77,6 +83,8 @@ public class MainActivity extends AppCompatActivity {
                     title = findViewById(R.id.text_item4);
                     description = findViewById(R.id.text_description4);
                     image = findViewById(R.id.image_item4);
+                    delete = findViewById(R.id.image_delete4);
+                    delete.setVisibility(View.INVISIBLE);
                     title.setText("");
                     description.setText("No hay producto seleccionado");
                     image.setImageResource(getResources().getIdentifier("no_product", "drawable", getPackageName()));
@@ -88,6 +96,8 @@ public class MainActivity extends AppCompatActivity {
                     title = findViewById(R.id.text_item5);
                     description = findViewById(R.id.text_description5);
                     image = findViewById(R.id.image_item5);
+                    delete = findViewById(R.id.image_delete5);
+                    delete.setVisibility(View.INVISIBLE);
                     title.setText("");
                     description.setText("No hay producto seleccionado");
                     image.setImageResource(getResources().getIdentifier("no_product", "drawable", getPackageName()));
@@ -99,6 +109,8 @@ public class MainActivity extends AppCompatActivity {
                     title = findViewById(R.id.text_item6);
                     description = findViewById(R.id.text_description6);
                     image = findViewById(R.id.image_item6);
+                    delete = findViewById(R.id.image_delete6);
+                    delete.setVisibility(View.INVISIBLE);
                     title.setText("");
                     description.setText("No hay producto seleccionado");
                     image.setImageResource(getResources().getIdentifier("no_product", "drawable", getPackageName()));
@@ -110,6 +122,8 @@ public class MainActivity extends AppCompatActivity {
                     title = findViewById(R.id.text_item7);
                     description = findViewById(R.id.text_description7);
                     image = findViewById(R.id.image_item7);
+                    delete = findViewById(R.id.image_delete7);
+                    delete.setVisibility(View.INVISIBLE);
                     title.setText("");
                     description.setText("No hay producto seleccionado");
                     image.setImageResource(getResources().getIdentifier("no_product", "drawable", getPackageName()));
@@ -121,6 +135,8 @@ public class MainActivity extends AppCompatActivity {
                     title = findViewById(R.id.text_item8);
                     description = findViewById(R.id.text_description8);
                     image = findViewById(R.id.image_item8);
+                    delete = findViewById(R.id.image_delete8);
+                    delete.setVisibility(View.INVISIBLE);
                     title.setText("");
                     description.setText("No hay producto seleccionado");
                     image.setImageResource(getResources().getIdentifier("no_product", "drawable", getPackageName()));
@@ -132,6 +148,8 @@ public class MainActivity extends AppCompatActivity {
                     title = findViewById(R.id.text_item9);
                     description = findViewById(R.id.text_description9);
                     image = findViewById(R.id.image_item9);
+                    delete = findViewById(R.id.image_delete9);
+                    delete.setVisibility(View.INVISIBLE);
                     title.setText("");
                     description.setText("No hay producto seleccionado");
                     image.setImageResource(getResources().getIdentifier("no_product", "drawable", getPackageName()));
@@ -143,6 +161,8 @@ public class MainActivity extends AppCompatActivity {
                     title = findViewById(R.id.text_item10);
                     description = findViewById(R.id.text_description10);
                     image = findViewById(R.id.image_item10);
+                    delete = findViewById(R.id.image_delete10);
+                    delete.setVisibility(View.INVISIBLE);
                     title.setText("");
                     description.setText("No hay producto seleccionado");
                     image.setImageResource(getResources().getIdentifier("no_product", "drawable", getPackageName()));
@@ -267,5 +287,10 @@ public class MainActivity extends AppCompatActivity {
             }
             count++;
         }
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
     }
 }
