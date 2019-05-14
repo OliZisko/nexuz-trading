@@ -45,8 +45,8 @@ public class MainActivity extends AppCompatActivity {
                     description = findViewById(R.id.text_description1);
                     image = findViewById(R.id.image_item1);
                     title.setText("");
-                    description.setText("");
-                    image.setVisibility(View.INVISIBLE);
+                    description.setText("No hay producto seleccionado");
+                    image.setImageResource(getResources().getIdentifier("no_product", "drawable", getPackageName()));
                     shopList.add(title);
                     imageList.add(image);
                     detailList.add(description);
@@ -56,8 +56,8 @@ public class MainActivity extends AppCompatActivity {
                     description = findViewById(R.id.text_description2);
                     image = findViewById(R.id.image_item2);
                     title.setText("");
-                    description.setText("");
-                    image.setVisibility(View.INVISIBLE);
+                    description.setText("No hay producto seleccionado");
+                    image.setImageResource(getResources().getIdentifier("no_product", "drawable", getPackageName()));
                     shopList.add(title);
                     imageList.add(image);
                     detailList.add(description);
@@ -67,8 +67,8 @@ public class MainActivity extends AppCompatActivity {
                     description = findViewById(R.id.text_description3);
                     image = findViewById(R.id.image_item3);
                     title.setText("");
-                    description.setText("");
-                    image.setVisibility(View.INVISIBLE);
+                    description.setText("No hay producto seleccionado");
+                    image.setImageResource(getResources().getIdentifier("no_product", "drawable", getPackageName()));
                     shopList.add(title);
                     imageList.add(image);
                     detailList.add(description);
@@ -78,8 +78,8 @@ public class MainActivity extends AppCompatActivity {
                     description = findViewById(R.id.text_description4);
                     image = findViewById(R.id.image_item4);
                     title.setText("");
-                    description.setText("");
-                    image.setVisibility(View.INVISIBLE);
+                    description.setText("No hay producto seleccionado");
+                    image.setImageResource(getResources().getIdentifier("no_product", "drawable", getPackageName()));
                     shopList.add(title);
                     imageList.add(image);
                     detailList.add(description);
@@ -89,8 +89,8 @@ public class MainActivity extends AppCompatActivity {
                     description = findViewById(R.id.text_description5);
                     image = findViewById(R.id.image_item5);
                     title.setText("");
-                    description.setText("");
-                    image.setVisibility(View.INVISIBLE);
+                    description.setText("No hay producto seleccionado");
+                    image.setImageResource(getResources().getIdentifier("no_product", "drawable", getPackageName()));
                     shopList.add(title);
                     imageList.add(image);
                     detailList.add(description);
@@ -100,8 +100,8 @@ public class MainActivity extends AppCompatActivity {
                     description = findViewById(R.id.text_description6);
                     image = findViewById(R.id.image_item6);
                     title.setText("");
-                    description.setText("");
-                    image.setVisibility(View.INVISIBLE);
+                    description.setText("No hay producto seleccionado");
+                    image.setImageResource(getResources().getIdentifier("no_product", "drawable", getPackageName()));
                     shopList.add(title);
                     imageList.add(image);
                     detailList.add(description);
@@ -111,8 +111,8 @@ public class MainActivity extends AppCompatActivity {
                     description = findViewById(R.id.text_description7);
                     image = findViewById(R.id.image_item7);
                     title.setText("");
-                    description.setText("");
-                    image.setVisibility(View.INVISIBLE);
+                    description.setText("No hay producto seleccionado");
+                    image.setImageResource(getResources().getIdentifier("no_product", "drawable", getPackageName()));
                     shopList.add(title);
                     imageList.add(image);
                     detailList.add(description);
@@ -122,8 +122,8 @@ public class MainActivity extends AppCompatActivity {
                     description = findViewById(R.id.text_description8);
                     image = findViewById(R.id.image_item8);
                     title.setText("");
-                    description.setText("");
-                    image.setVisibility(View.INVISIBLE);
+                    description.setText("No hay producto seleccionado");
+                    image.setImageResource(getResources().getIdentifier("no_product", "drawable", getPackageName()));
                     shopList.add(title);
                     imageList.add(image);
                     detailList.add(description);
@@ -133,8 +133,8 @@ public class MainActivity extends AppCompatActivity {
                     description = findViewById(R.id.text_description9);
                     image = findViewById(R.id.image_item9);
                     title.setText("");
-                    description.setText("");
-                    image.setVisibility(View.INVISIBLE);
+                    description.setText("No hay producto seleccionado");
+                    image.setImageResource(getResources().getIdentifier("no_product", "drawable", getPackageName()));
                     shopList.add(title);
                     imageList.add(image);
                     detailList.add(description);
@@ -144,8 +144,8 @@ public class MainActivity extends AppCompatActivity {
                     description = findViewById(R.id.text_description10);
                     image = findViewById(R.id.image_item10);
                     title.setText("");
-                    description.setText("");
-                    image.setVisibility(View.INVISIBLE);
+                    description.setText("No hay producto seleccionado");
+                    image.setImageResource(getResources().getIdentifier("no_product", "drawable", getPackageName()));
                     shopList.add(title);
                     imageList.add(image);
                     detailList.add(description);
@@ -167,7 +167,6 @@ public class MainActivity extends AppCompatActivity {
                 String title_team = data.getStringExtra(SecondActivity.EXTRA_REPLY_TITLE);
                 String description_team = data.getStringExtra(SecondActivity.EXTRA_REPLY_DESCRIPTION);
                 byte[] byteArray = data.getByteArrayExtra(SecondActivity.EXTRA_REPLY_IMAGE);
-
                 switch (title_team){
                     case "FC Real Madrid":
                         setValues(title_team, description_team, byteArray);
