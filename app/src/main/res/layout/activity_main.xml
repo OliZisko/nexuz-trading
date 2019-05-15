@@ -152,6 +152,18 @@
                 android:layout_marginStart="@dimen/margin_left_title"
                 />
 
+            <ImageView
+                android:id="@+id/image_delete1"
+                android:layout_toRightOf="@id/text_item1"
+                android:src="@drawable/botondelete"
+                android:layout_marginTop="@dimen/margintop_delete"
+                android:layout_width="@dimen/dimen_delete_image"
+                android:layout_height="@dimen/dimen_delete_image"
+                android:padding="@dimen/padding_title"
+                android:contentDescription="@string/content_Imageview"
+                android:layout_toEndOf="@id/text_item1"
+                />
+
             <TextView
                 android:id="@+id/text_description1"
                 android:layout_width="wrap_content"
@@ -191,6 +203,19 @@
                 android:layout_marginTop="@dimen/margin_top"
                 android:layout_marginStart="@dimen/margin_left_title"
                 android:layout_toEndOf="@id/image_item2"
+                />
+
+            <ImageView
+                android:id="@+id/image_delete2"
+                android:layout_toRightOf="@id/text_item2"
+                android:layout_toEndOf="@id/text_item2"
+                android:layout_below="@id/image_item1"
+                android:src="@drawable/botondelete"
+                android:layout_marginTop="@dimen/margintop_delete"
+                android:layout_width="@dimen/dimen_delete_image"
+                android:layout_height="@dimen/dimen_delete_image"
+                android:padding="@dimen/padding_title"
+                android:contentDescription="@string/content_Imageview"
                 />
 
             <TextView
@@ -234,6 +259,19 @@
                 android:layout_toEndOf="@id/image_item3"
                 />
 
+            <ImageView
+                android:id="@+id/image_delete3"
+                android:layout_toRightOf="@id/text_item3"
+                android:layout_toEndOf="@id/text_item3"
+                android:layout_below="@id/image_item2"
+                android:src="@drawable/botondelete"
+                android:layout_marginTop="@dimen/margintop_delete"
+                android:layout_width="@dimen/dimen_delete_image"
+                android:layout_height="@dimen/dimen_delete_image"
+                android:padding="@dimen/padding_title"
+                android:contentDescription="@string/content_Imageview"
+                />
+
             <TextView
                 android:id="@+id/text_description3"
                 android:layout_width="wrap_content"
@@ -273,6 +311,19 @@
                 android:layout_marginTop="@dimen/margin_top"
                 android:layout_marginStart="@dimen/margin_left_title"
                 android:layout_toEndOf="@id/image_item4"
+                />
+
+            <ImageView
+                android:id="@+id/image_delete4"
+                android:layout_toRightOf="@id/text_item4"
+                android:layout_toEndOf="@id/text_item4"
+                android:layout_below="@id/image_item3"
+                android:src="@drawable/botondelete"
+                android:layout_marginTop="@dimen/margintop_delete"
+                android:layout_width="@dimen/dimen_delete_image"
+                android:layout_height="@dimen/dimen_delete_image"
+                android:padding="@dimen/padding_title"
+                android:contentDescription="@string/content_Imageview"
                 />
 
             <TextView
@@ -316,6 +367,19 @@
                 android:layout_toEndOf="@id/image_item5"
                 />
 
+            <ImageView
+                android:id="@+id/image_delete5"
+                android:layout_toRightOf="@id/text_item5"
+                android:layout_toEndOf="@id/text_item5"
+                android:layout_below="@id/image_item4"
+                android:src="@drawable/botondelete"
+                android:layout_marginTop="@dimen/margintop_delete"
+                android:layout_width="@dimen/dimen_delete_image"
+                android:layout_height="@dimen/dimen_delete_image"
+                android:padding="@dimen/padding_title"
+                android:contentDescription="@string/content_Imageview"
+                />
+
             <TextView
                 android:id="@+id/text_description5"
                 android:layout_width="wrap_content"
@@ -355,6 +419,19 @@
                 android:layout_marginTop="@dimen/margin_top"
                 android:layout_marginStart="@dimen/margin_left_title"
                 android:layout_toEndOf="@id/image_item6"
+                />
+
+            <ImageView
+                android:id="@+id/image_delete6"
+                android:layout_toRightOf="@id/text_item6"
+                android:layout_toEndOf="@id/text_item6"
+                android:layout_below="@id/image_item5"
+                android:src="@drawable/botondelete"
+                android:layout_marginTop="@dimen/margintop_delete"
+                android:layout_width="@dimen/dimen_delete_image"
+                android:layout_height="@dimen/dimen_delete_image"
+                android:padding="@dimen/padding_title"
+                android:contentDescription="@string/content_Imageview"
                 />
 
             <TextView
@@ -398,6 +475,19 @@
                 android:layout_toEndOf="@id/image_item7"
                 />
 
+            <ImageView
+                android:id="@+id/image_delete7"
+                android:layout_toRightOf="@id/text_item7"
+                android:layout_toEndOf="@id/text_item7"
+                android:layout_below="@id/image_item6"
+                android:src="@drawable/botondelete"
+                android:layout_marginTop="@dimen/margintop_delete"
+                android:layout_width="@dimen/dimen_delete_image"
+                android:layout_height="@dimen/dimen_delete_image"
+                android:padding="@dimen/padding_title"
+                android:contentDescription="@string/content_Imageview"
+                />
+
             <TextView
                 android:id="@+id/text_description7"
                 android:layout_width="wrap_content"
@@ -437,6 +527,19 @@
                 android:layout_marginTop="@dimen/margin_top"
                 android:layout_marginStart="@dimen/margin_left_title"
                 android:layout_toEndOf="@id/image_item8"
+                />
+
+            <ImageView
+                android:id="@+id/image_delete8"
+                android:layout_toRightOf="@id/text_item8"
+                android:layout_toEndOf="@id/text_item8"
+                android:layout_below="@id/image_item7"
+                android:src="@drawable/botondelete"
+                android:layout_marginTop="@dimen/margintop_delete"
+                android:layout_width="@dimen/dimen_delete_image"
+                android:layout_height="@dimen/dimen_delete_image"
+                android:padding="@dimen/padding_title"
+                android:contentDescription="@string/content_Imageview"
                 />
 
             <TextView
@@ -480,6 +583,19 @@
                 android:layout_toEndOf="@id/image_item9"
                 />
 
+            <ImageView
+                android:id="@+id/image_delete9"
+                android:layout_toRightOf="@id/text_item9"
+                android:layout_toEndOf="@id/text_item9"
+                android:layout_below="@id/image_item8"
+                android:src="@drawable/botondelete"
+                android:layout_marginTop="@dimen/margintop_delete"
+                android:layout_width="@dimen/dimen_delete_image"
+                android:layout_height="@dimen/dimen_delete_image"
+                android:padding="@dimen/padding_title"
+                android:contentDescription="@string/content_Imageview"
+                />
+
             <TextView
                 android:id="@+id/text_description9"
                 android:layout_width="wrap_content"
@@ -519,6 +635,19 @@
                 android:layout_marginTop="@dimen/margin_top"
                 android:layout_marginStart="@dimen/margin_left_title"
                 android:layout_toEndOf="@id/image_item10"
+                />
+
+            <ImageView
+                android:id="@+id/image_delete10"
+                android:layout_toRightOf="@id/text_item10"
+                android:layout_toEndOf="@id/text_item10"
+                android:layout_below="@id/image_item9"
+                android:src="@drawable/botondelete"
+                android:layout_marginTop="@dimen/margintop_delete"
+                android:layout_width="@dimen/dimen_delete_image"
+                android:layout_height="@dimen/dimen_delete_image"
+                android:padding="@dimen/padding_title"
+                android:contentDescription="@string/content_Imageview"
                 />
 
             <TextView
