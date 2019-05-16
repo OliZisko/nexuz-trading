@@ -655,6 +655,7 @@ public class MainActivity extends AppCompatActivity {
                     detailList.get(i-1).setText(detailList.get(i).getText().toString());
                     imageList.get(i-1).setImageDrawable(imageList.get(i).getDrawable());
                 }
+                Log.d("MENSAJE", Integer.toString(i));
                 if(i+1 < shopList.size()){
                     if(shopList.get(i+1).getText().toString() == ""){
                         shopList.get(i).setText("");
@@ -663,6 +664,14 @@ public class MainActivity extends AppCompatActivity {
                         deleteList.get(i).setVisibility(View.INVISIBLE);
                         viewList.get(i).setVisibility(View.INVISIBLE);
                     }
+                }
+                if(i+1 == 10){
+                    Log.d("MENSAJE", "HOLA");
+                    shopList.get(i).setText("");
+                    detailList.get(i).setText("");
+                    imageList.get(i).setVisibility(View.INVISIBLE);
+                    deleteList.get(i).setVisibility(View.INVISIBLE);
+                    viewList.get(i).setVisibility(View.INVISIBLE);
                 }
             }
             if(validacion == 0){
