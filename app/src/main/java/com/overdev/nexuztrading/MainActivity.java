@@ -686,4 +686,6 @@ public class MainActivity extends AppCompatActivity {
             view.setVisibility(View.INVISIBLE);
         }
     }
+
 }
+
