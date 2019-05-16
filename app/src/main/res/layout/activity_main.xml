@@ -162,6 +162,7 @@
                 android:padding="@dimen/padding_title"
                 android:contentDescription="@string/content_Imageview"
                 android:layout_toEndOf="@id/text_item1"
+                android:onClick="delete1"
                 />
 
             <TextView
@@ -216,6 +217,7 @@
                 android:layout_height="@dimen/dimen_delete_image"
                 android:padding="@dimen/padding_title"
                 android:contentDescription="@string/content_Imageview"
+                android:onClick="delete2"
                 />
 
             <TextView
@@ -270,6 +272,7 @@
                 android:layout_height="@dimen/dimen_delete_image"
                 android:padding="@dimen/padding_title"
                 android:contentDescription="@string/content_Imageview"
+                android:onClick="delete3"
                 />
 
             <TextView
@@ -324,6 +327,7 @@
                 android:layout_height="@dimen/dimen_delete_image"
                 android:padding="@dimen/padding_title"
                 android:contentDescription="@string/content_Imageview"
+                android:onClick="delete4"
                 />
 
             <TextView
@@ -378,6 +382,7 @@
                 android:layout_height="@dimen/dimen_delete_image"
                 android:padding="@dimen/padding_title"
                 android:contentDescription="@string/content_Imageview"
+                android:onClick="delete5"
                 />
 
             <TextView
@@ -432,6 +437,7 @@
                 android:layout_height="@dimen/dimen_delete_image"
                 android:padding="@dimen/padding_title"
                 android:contentDescription="@string/content_Imageview"
+                android:onClick="delete6"
                 />
 
             <TextView
@@ -486,6 +492,7 @@
                 android:layout_height="@dimen/dimen_delete_image"
                 android:padding="@dimen/padding_title"
                 android:contentDescription="@string/content_Imageview"
+                android:onClick="delete7"
                 />
 
             <TextView
@@ -540,6 +547,7 @@
                 android:layout_height="@dimen/dimen_delete_image"
                 android:padding="@dimen/padding_title"
                 android:contentDescription="@string/content_Imageview"
+                android:onClick="delete8"
                 />
 
             <TextView
@@ -594,6 +602,7 @@
                 android:layout_height="@dimen/dimen_delete_image"
                 android:padding="@dimen/padding_title"
                 android:contentDescription="@string/content_Imageview"
+                android:onClick="delete9"
                 />
 
             <TextView
@@ -648,6 +657,7 @@
                 android:layout_height="@dimen/dimen_delete_image"
                 android:padding="@dimen/padding_title"
                 android:contentDescription="@string/content_Imageview"
+                android:onClick="delete10"
                 />
 
             <TextView
