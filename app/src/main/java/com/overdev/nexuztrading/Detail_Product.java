@@ -42,7 +42,7 @@ public class Detail_Product extends AppCompatActivity {
         foto = imagen;
         switch (imagen){
             case "camisa_aja_nc":
-                history.setText("Es un club de fútbol neerlandés de la ciudad de Ámsterdam. Fue fundado en 1900 y juega en la primera división de la Eredivisie, categoría que ocupa desde los primeros años de la competición.");
+                history.setText("Es un club de fútbol neerlandés de la ciudad de Ámsterdam. Fue fundado en 1900 y juega en la primera división de la Eredivisie, categoría que ocupa desde los primeros años de la competición. Es históricamente uno de los tres clubes que dominan el fútbol de elite de los Países Bajos formando De Grote Drie (los tres grandes) junto a sus rivales el P. S. V., con el que disputa De Topper y el Feyenoord, con el que disputa De Klassieker o clásico neerlandés.");
                 break;
 
             case "camisa_atl_nc":
@@ -82,7 +82,7 @@ public class Detail_Product extends AppCompatActivity {
                 break;
 
             case "camisa_lyo_nc":
-                history.setText("Es un club de fútbol de Francia con sede en Lyon. Es uno de los equipos más populares y el tercero más laureado en la historia del fútbol francés, con 7 campeonatos de liga.");
+                history.setText("Conocido como Olympique de Lyon en los países hispanohablantes, o simplemente OL o Lyon) es un club de fútbol de Francia con sede en Lyon. Es uno de los equipos más populares y el tercero más laureado en la historia del fútbol francés, con 7 campeonatos de liga. Juegan en la división mayor del fútbol de Francia, la Ligue 1. El club Lyon Olympique Universitaire (LOU) se formó en 1899, de acuerdo con muchos partidarios y los historiadores del deporte, pero no se estableció a nivel nacional como un club profesional.");
                 break;
 
             case "camisa_man_nc":
@@ -106,7 +106,7 @@ public class Detail_Product extends AppCompatActivity {
                 break;
 
             case "camisa_psg_nc":
-                history.setText("Es un club de fútbol profesional con sede en París, Francia El club fue fundado el 12 de agosto de 1970 gracias a la fusión del Paris Football Club y el Stade Saint-Germanois");
+                history.setText("Es un club de fútbol profesional con sede en París, Francia El club fue fundado el 12 de agosto de 1970 gracias a la fusión del Paris Football Club y el Stade Saint-Germanois. Disputa la Ligue 1, máxima categoría del fútbol francés, desde 1974, el récord de más participaciones de manera consecutiva del campeonato en curso, siendo el único equipo francés que nunca ha descendidon y uno de los equipos más reconocidos del país tras haber conquistado siete Ligas, doce Copas, ocho Copas de Liga y ocho Supercopas. Es junto con el Olympique de Marsella y Olympique Lyonnais, uno de los tres clubes franceses que han ganado un título europeo, la Recopa de Europa de 1996 y la Copa Intertoto de la UEFA de 2001");
                 break;
 
             case "camisa_rea_nc":
