@@ -1,5 +1,6 @@
 package com.overdev.nexuztrading;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -12,6 +13,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
@@ -418,6 +420,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void setValues(String title_team, String description_team, byte[] byteArray){
         count = 0;
+        int countFull = 0;
         for (TextView element: shopList) {
             if (element.getText() == "") {
                 element.setText(title_team);
@@ -427,11 +430,23 @@ public class MainActivity extends AppCompatActivity {
                 imageList.get(count).setVisibility(View.VISIBLE);
                 deleteList.get(count).setVisibility(View.VISIBLE);
                 break;
-            } else if (count == shopList.size()){
-                Log.d(TAG, "Completo");
+            } else {
+                countFull++;
+            }
+
+            if (countFull == shopList.size()){
+                //String countTxt = Integer.toString(count);
+                showToast();
+                Log.d(TAG, "Lleno");
             }
             count++;
         }
+    }
+
+    public void showToast(){
+        Context context = getApplicationContext ();
+        Toast toast = Toast.makeText(context, R.string.msg_toast, Toast.LENGTH_LONG);
+        toast.show();
     }
 
     @Override

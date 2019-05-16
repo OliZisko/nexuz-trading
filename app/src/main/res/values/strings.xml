@@ -46,4 +46,5 @@
     <string name="subtext_item18">0 Champions League \n \n Precio: 50$</string>
     <string name="subtext_item19">0 Champions League \n \n Precio: 50$</string>
     <string name="subtext_item20">0 Champions League \n \n Precio: 50$</string>
+    <string name="msg_toast">Carrito lleno, por favor Efectue la compra o Elimine algún producto</string>
 </resources>
