@@ -16,6 +16,12 @@ import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ @author: Alberto Garcia - Francisco De Oliveira - Jose Cafaro
+ Nexus Trading - App movil para carrito de compra
+ Proyecto de la materia de Programación Bajo Ambiente Android en la UCAB
+ @version 1.0.0. / 16-05-2019
+ */
 public class Detail_Product extends AppCompatActivity {
     private String titulo, descripcion, imagen, foto;
 
@@ -26,6 +32,12 @@ public class Detail_Product extends AppCompatActivity {
     public static final int TEXT_REQUEST = 1;
 
 
+    /**
+     * Este metodo onCreate es para inicializar la Activity de Detail_Product
+     * Se reciben el titulo, descripcion e imagen de cada item seleccionado en el Second Activity
+     * Se realiza un Switch - Case para enviar la historia correspondiente a cada detalle que se quiera mostrar por cada equipo
+     * Se recibe el nombre del recurso con un String para luego buscar la imagen por su nombre en el directorio Drawable
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
