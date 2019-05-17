@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.io.ByteArrayOutputStream;
+
 /**
 
  @author: Alberto Garcia - Francisco De Oliveira - Jose Cafaro
@@ -21,18 +22,30 @@ import java.io.ByteArrayOutputStream;
  */
 
 public class SecondActivity extends AppCompatActivity {
-    private TextView title, description; //Variables para definir el titulo y la descripcion a enviar al MainActivity
-    private String title1, description1; //Variables para definir el titulo y la descripcion a enviar al Detail_Product
 
-    public static final String EXTRA_REPLY_TITLE = "com.overdev.nexuztrading.extra.REPLY"; //variable para enviar datos por medio del PutExtra en este caso titulo de la camisa
-    public static final String EXTRA_REPLY_DESCRIPTION = "com.overdev.nexuztrading.extra.REPLY_1";//variable para enviar datos por medio del PutExtra en este caso descripcion de la camisa
-    public static final String EXTRA_REPLY_IMAGE = "com.overdev.nexuztrading.extra.REPLY_2"; //variable para enviar datos por medio del PutExtra en este caso imagen de la camisa
+    //Variables para definir el titulo y la descripcion a enviar al MainActivity
+    private TextView title, description;
 
+    //Variables para definir el titulo y la descripcion a enviar al Detail_Product
+    private String title1, description1;
+
+    //variable para enviar datos por medio del PutExtra en este caso titulo de la camisa
+    public static final String EXTRA_REPLY_TITLE = "com.overdev.nexuztrading.extra.REPLY";
+
+    //variable para enviar datos por medio del PutExtra en este caso descripcion de la camisa
+    public static final String EXTRA_REPLY_DESCRIPTION = "com.overdev.nexuztrading.extra.REPLY_1";
+
+    //variable para enviar datos por medio del PutExtra en este caso imagen de la camisa
+    public static final String EXTRA_REPLY_IMAGE = "com.overdev.nexuztrading.extra.REPLY_2";
+
+    /**
+     * Este callback se llama cuando se crea esta actividad.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
@@ -55,7 +68,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_REPLY_IMAGE, byteArray);
         setResult(RESULT_OK, intent);
         finish();
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
@@ -78,7 +91,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_REPLY_IMAGE, byteArray);
         setResult(RESULT_OK, intent);
         finish();
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
@@ -101,7 +114,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_REPLY_IMAGE, byteArray);
         setResult(RESULT_OK, intent);
         finish();
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
@@ -124,7 +137,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_REPLY_IMAGE, byteArray);
         setResult(RESULT_OK, intent);
         finish();
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
@@ -147,7 +160,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_REPLY_IMAGE, byteArray);
         setResult(RESULT_OK, intent);
         finish();
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
@@ -170,7 +183,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_REPLY_IMAGE, byteArray);
         setResult(RESULT_OK, intent);
         finish();
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
@@ -193,7 +206,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_REPLY_IMAGE, byteArray);
         setResult(RESULT_OK, intent);
         finish();
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
@@ -216,7 +229,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_REPLY_IMAGE, byteArray);
         setResult(RESULT_OK, intent);
         finish();
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
@@ -239,7 +252,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_REPLY_IMAGE, byteArray);
         setResult(RESULT_OK, intent);
         finish();
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
@@ -262,7 +275,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_REPLY_IMAGE, byteArray);
         setResult(RESULT_OK, intent);
         finish();
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
@@ -285,7 +298,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_REPLY_IMAGE, byteArray);
         setResult(RESULT_OK, intent);
         finish();
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
@@ -308,7 +321,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_REPLY_IMAGE, byteArray);
         setResult(RESULT_OK, intent);
         finish();
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
@@ -331,7 +344,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_REPLY_IMAGE, byteArray);
         setResult(RESULT_OK, intent);
         finish();
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
@@ -354,7 +367,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_REPLY_IMAGE, byteArray);
         setResult(RESULT_OK, intent);
         finish();
-    }
+    }//Cierre del método
 
 
     /**
@@ -378,7 +391,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_REPLY_IMAGE, byteArray);
         setResult(RESULT_OK, intent);
         finish();
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
@@ -401,7 +414,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_REPLY_IMAGE, byteArray);
         setResult(RESULT_OK, intent);
         finish();
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
@@ -424,7 +437,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_REPLY_IMAGE, byteArray);
         setResult(RESULT_OK, intent);
         finish();
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
@@ -447,7 +460,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_REPLY_IMAGE, byteArray);
         setResult(RESULT_OK, intent);
         finish();
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
@@ -470,7 +483,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_REPLY_IMAGE, byteArray);
         setResult(RESULT_OK, intent);
         finish();
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
@@ -493,7 +506,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_REPLY_IMAGE, byteArray);
         setResult(RESULT_OK, intent);
         finish();
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
@@ -513,7 +526,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra("imagen", img);
         startActivity(intent);
 
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
@@ -533,7 +546,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra("imagen", img);
         startActivity(intent);
 
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
@@ -553,7 +566,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra("imagen", img);
         startActivity(intent);
 
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
@@ -573,7 +586,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra("imagen", img);
         startActivity(intent);
 
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
@@ -593,7 +606,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra("imagen", img);
         startActivity(intent);
 
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
@@ -613,7 +626,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra("imagen", img);
         startActivity(intent);
 
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
@@ -633,7 +646,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra("imagen", img);
         startActivity(intent);
 
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
@@ -653,7 +666,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra("imagen", img);
         startActivity(intent);
 
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
@@ -673,7 +686,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra("imagen", img);
         startActivity(intent);
 
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
@@ -693,7 +706,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra("imagen", img);
         startActivity(intent);
 
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
@@ -713,7 +726,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra("imagen", img);
         startActivity(intent);
 
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
@@ -733,7 +746,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra("imagen", img);
         startActivity(intent);
 
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
@@ -753,7 +766,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra("imagen", img);
         startActivity(intent);
 
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
@@ -773,7 +786,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra("imagen", img);
         startActivity(intent);
 
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
@@ -793,7 +806,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra("imagen", img);
         startActivity(intent);
 
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
@@ -813,7 +826,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra("imagen", img);
         startActivity(intent);
 
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
@@ -833,7 +846,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra("imagen", img);
         startActivity(intent);
 
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
@@ -853,7 +866,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra("imagen", img);
         startActivity(intent);
 
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
@@ -873,7 +886,7 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra("imagen", img);
         startActivity(intent);
 
-    }
+    }//Cierre del método
 
     /**
      * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
@@ -893,5 +906,5 @@ public class SecondActivity extends AppCompatActivity {
         intent.putExtra("imagen", img);
         startActivity(intent);
 
-    }
+    }//Cierre del método
 }
