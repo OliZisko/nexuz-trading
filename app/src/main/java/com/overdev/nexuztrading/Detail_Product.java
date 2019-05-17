@@ -23,13 +23,8 @@ import java.util.List;
  @version 1.0.0. / 16-05-2019
  */
 public class Detail_Product extends AppCompatActivity {
-    private String titulo, descripcion, imagen, foto;
+    private String titulo, descripcion, imagen, foto; //Variables para trabajar con los String que se reciben por el Intend con el metddo getStringExtra.
 
-    private static final String TAG = "DetailActivity";
-    public static final String EXTRA_REPLY_TITLE = "com.overdev.nexuztrading.extra.REPLY";
-    public static final String EXTRA_REPLY_DESCRIPTION = "com.overdev.nexuztrading.extra.REPLY_1";
-    public static final String EXTRA_REPLY_IMAGE = "com.overdev.nexuztrading.extra.REPLY_2";
-    public static final int TEXT_REQUEST = 1;
 
 
     /**

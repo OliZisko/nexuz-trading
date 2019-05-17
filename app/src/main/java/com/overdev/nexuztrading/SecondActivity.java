@@ -21,12 +21,12 @@ import java.io.ByteArrayOutputStream;
  */
 
 public class SecondActivity extends AppCompatActivity {
-    private TextView title, description;
-    private String title1, description1;
+    private TextView title, description; //Variables para definir el titulo y la descripcion a enviar al MainActivity
+    private String title1, description1; //Variables para definir el titulo y la descripcion a enviar al Detail_Product
 
-    public static final String EXTRA_REPLY_TITLE = "com.overdev.nexuztrading.extra.REPLY";
-    public static final String EXTRA_REPLY_DESCRIPTION = "com.overdev.nexuztrading.extra.REPLY_1";
-    public static final String EXTRA_REPLY_IMAGE = "com.overdev.nexuztrading.extra.REPLY_2";
+    public static final String EXTRA_REPLY_TITLE = "com.overdev.nexuztrading.extra.REPLY"; //variable para enviar datos por medio del PutExtra en este caso titulo de la camisa
+    public static final String EXTRA_REPLY_DESCRIPTION = "com.overdev.nexuztrading.extra.REPLY_1";//variable para enviar datos por medio del PutExtra en este caso descripcion de la camisa
+    public static final String EXTRA_REPLY_IMAGE = "com.overdev.nexuztrading.extra.REPLY_2"; //variable para enviar datos por medio del PutExtra en este caso imagen de la camisa
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
