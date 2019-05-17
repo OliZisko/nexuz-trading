@@ -39,7 +39,10 @@ public class MainActivity extends AppCompatActivity {
     //Lista que contiene los Textviews con el detalle o descripción del Producto.
     public List<TextView> detailList = new ArrayList<TextView>();
 
+    //Lista que contiene los ImageViews para borrar el Producto.
     public List<ImageView> deleteList = new ArrayList<ImageView>();
+
+    //Lista que contiene los Views que dividen cada producto.
     public List<View> viewList = new ArrayList<View>();
 
     //Contador para determinar la cantidad de productos que hay en el carrito.
@@ -54,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
     //Variables Auxiliares  para el detalle del Producto.
     public TextView description_1, description_2, description_3, description_4, description_5, description_6, description_7, description_8, description_9, description_10;
 
-
+    //Variables Auxiliares para la imagen de borrar Producto.
     public ImageView delete_1, delete_2, delete_3, delete_4, delete_5, delete_6, delete_7, delete_8, delete_9, delete_10;
 
     //Variables Auxiliares  para la imagen del Producto.
@@ -172,7 +175,6 @@ public class MainActivity extends AppCompatActivity {
         if (savedInstanceState != null) {
             title_1.setText(savedInstanceState.getString("text_1"));
             description_1.setText(savedInstanceState.getString("description_1"));
-            //delete_1.setVisibility(View.VISIBLE);
             if(title_1.getText().toString() != ""){
                 view.setVisibility(View.VISIBLE);
                 view1.setVisibility(View.VISIBLE);
@@ -646,46 +648,85 @@ public class MainActivity extends AppCompatActivity {
 
     }//Cierre del método
 
+
+    /**
+     * Este metodo es activado al clickear el ImageView para eliminar el Producto 1 del carrito.
+     */
     public void delete1(View view) {
         deleteElement(0, title_1.getText().toString());
-    }
+    }//Cierre del método
 
+    /**
+     * Este metodo es activado al clickear el ImageView para eliminar el Producto 2 del carrito.
+     */
     public void delete2(View view) {
         deleteElement(1, title_2.getText().toString());
-    }
+    }//Cierre del método
 
+    /**
+     * Este metodo es activado al clickear el ImageView para eliminar el Producto 3 del carrito.
+     */
     public void delete3(View view) {
         deleteElement(2, title_3.getText().toString());
-    }
+    }//Cierre del método
 
+    /**
+     * Este metodo es activado al clickear el ImageView para eliminar el Producto 4 del carrito.
+     */
     public void delete4(View view) {
         deleteElement(3, title_4.getText().toString());
-    }
+    }//Cierre del método
 
+    /**
+     * Este metodo es activado al clickear el ImageView para eliminar el Producto 5 del carrito.
+     */
     public void delete5(View view) {
         deleteElement(4, title_5.getText().toString());
-    }
+    }//Cierre del método
 
+    /**
+     * Este metodo es activado al clickear el ImageView para eliminar el Producto 6 del carrito.
+     */
     public void delete6(View view) {
         deleteElement(5, title_6.getText().toString());
-    }
+    }//Cierre del método
 
+    /**
+     * Este metodo es activado al clickear el ImageView para eliminar el Producto 7 del carrito.
+     */
     public void delete7(View view) {
         deleteElement(6, title_7.getText().toString());
-    }
+    }//Cierre del método
 
+    /**
+     * Este metodo es activado al clickear el ImageView para eliminar el Producto 8 del carrito.
+     */
     public void delete8(View view) {
         deleteElement(7, title_8.getText().toString());
-    }
+    }//Cierre del método
 
+    /**
+     * Este metodo es activado al clickear el ImageView para eliminar el Producto 9 del carrito.
+     */
     public void delete9(View view) {
         deleteElement(8, title_9.getText().toString());
-    }
+    }//Cierre del método
 
+    /**
+     * Este metodo es activado al clickear el ImageView para eliminar el Producto 10 del carrito.
+     */
     public void delete10(View view) {
         deleteElement(9, title_10.getText().toString());
-    }
+    }//Cierre del método
 
+    /**
+     * Este metodo es llamado por los onClick de eliminar el producto seleccionado del carrito
+     * se le pasa la posicion del producto a eliminar y el titulo del producto. Luego con esto
+     * recorre la lista de productos y verifica las condiciones establecidas para eliminar y
+     * luego baja los demás productos en la lista de lugar. Es decir, si se borra el producto 8
+     * el producto 9 ahora pasaría a ser el 8 y el 10 el 9. Tambien se hacen invisibles las
+     * respectivas vistas de los productos eliminados.
+     */
     public void deleteElement(Integer posicion, String title_team){
         int validacion = 0;
         if(posicion<shopList.size()-1){
@@ -705,7 +746,6 @@ public class MainActivity extends AppCompatActivity {
                     detailList.get(i-1).setText(detailList.get(i).getText().toString());
                     imageList.get(i-1).setImageDrawable(imageList.get(i).getDrawable());
                 }
-                Log.d("MENSAJE", Integer.toString(i));
                 if(i+1 < shopList.size()){
                     if(shopList.get(i+1).getText().toString() == ""){
                         shopList.get(i).setText("");
@@ -716,7 +756,6 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
                 if(i+1 == 10){
-                    Log.d("MENSAJE", "HOLA");
                     shopList.get(i).setText("");
                     detailList.get(i).setText("");
                     imageList.get(i).setVisibility(View.INVISIBLE);

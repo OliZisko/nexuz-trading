@@ -22,8 +22,11 @@ import java.util.List;
  Proyecto de la materia de Programación Bajo Ambiente Android en la UCAB
  @version 1.0.0. / 16-05-2019
  */
+
 public class Detail_Product extends AppCompatActivity {
-    private String titulo, descripcion, imagen, foto; //Variables para trabajar con los String que se reciben por el Intend con el metddo getStringExtra.
+
+    //Variables para trabajar con los String que se reciben por el Intend con el metddo getStringExtra.
+    private String titulo, descripcion, imagen, foto;
 
 
 
@@ -130,5 +133,5 @@ public class Detail_Product extends AppCompatActivity {
         }
         image.setImageResource(getResources().getIdentifier(foto, "drawable", getPackageName()));
 
-    }
+    }//Cierre del método
 }
