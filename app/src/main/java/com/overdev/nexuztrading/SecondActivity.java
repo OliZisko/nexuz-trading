@@ -11,6 +11,14 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.io.ByteArrayOutputStream;
+/**
+
+ @author: Alberto Garcia - Francisco De Oliveira - Jose Cafaro
+ Nexus Trading - App movil para carrito de compra
+ Proyecto de la materia de Programación Bajo Ambiente Android en la UCAB
+ @version 1.0.0. / 16-05-2019
+
+ */
 
 public class SecondActivity extends AppCompatActivity {
     private TextView title, description;
@@ -26,6 +34,12 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second);
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se usa el tipo de dato Bitmap para enviar la imagen de una activity a otra
+     * Esto para el caso del equipo de futbol de: Real Madrid
+     */
     public void sendData1(View view) {
         title = findViewById(R.id.text_item1);
         description = findViewById(R.id.text_description1);
@@ -43,6 +57,12 @@ public class SecondActivity extends AppCompatActivity {
         finish();
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se usa el tipo de dato Bitmap para enviar la imagen de una activity a otra
+     * Esto para el caso del equipo de futbol de: Milan
+     */
     public void sendData2(View view) {
         title = findViewById(R.id.text_item2);
         description = findViewById(R.id.text_description2);
@@ -60,6 +80,12 @@ public class SecondActivity extends AppCompatActivity {
         finish();
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se usa el tipo de dato Bitmap para enviar la imagen de una activity a otra
+     * Esto para el caso del equipo de futbol de: Barcelona
+     */
     public void sendData3(View view) {
         title = findViewById(R.id.text_item3);
         description = findViewById(R.id.text_description3);
@@ -77,6 +103,12 @@ public class SecondActivity extends AppCompatActivity {
         finish();
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se usa el tipo de dato Bitmap para enviar la imagen de una activity a otra
+     * Esto para el caso del equipo de futbol de: Liverpool
+     */
     public void sendData4(View view) {
         title = findViewById(R.id.text_item4);
         description = findViewById(R.id.text_description4);
@@ -94,6 +126,12 @@ public class SecondActivity extends AppCompatActivity {
         finish();
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se usa el tipo de dato Bitmap para enviar la imagen de una activity a otra
+     * Esto para el caso del equipo de futbol de: Bayern Munich
+     */
     public void sendData5(View view) {
         title = findViewById(R.id.text_item5);
         description = findViewById(R.id.text_description5);
@@ -111,6 +149,12 @@ public class SecondActivity extends AppCompatActivity {
         finish();
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se usa el tipo de dato Bitmap para enviar la imagen de una activity a otra
+     * Esto para el caso del equipo de futbol de: Ajax
+     */
     public void sendData6(View view) {
         title = findViewById(R.id.text_item6);
         description = findViewById(R.id.text_description6);
@@ -128,6 +172,12 @@ public class SecondActivity extends AppCompatActivity {
         finish();
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se usa el tipo de dato Bitmap para enviar la imagen de una activity a otra
+     * Esto para el caso del equipo de futbol de: Manchester United
+     */
     public void sendData7(View view) {
         title = findViewById(R.id.text_item7);
         description = findViewById(R.id.text_description7);
@@ -145,6 +195,12 @@ public class SecondActivity extends AppCompatActivity {
         finish();
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se usa el tipo de dato Bitmap para enviar la imagen de una activity a otra
+     * Esto para el caso del equipo de futbol de: Juventus
+     */
     public void sendData8(View view) {
         title = findViewById(R.id.text_item8);
         description = findViewById(R.id.text_description8);
@@ -162,6 +218,12 @@ public class SecondActivity extends AppCompatActivity {
         finish();
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se usa el tipo de dato Bitmap para enviar la imagen de una activity a otra
+     * Esto para el caso del equipo de futbol de: Benfica
+     */
     public void sendData9(View view) {
         title = findViewById(R.id.text_item9);
         description = findViewById(R.id.text_description9);
@@ -179,6 +241,12 @@ public class SecondActivity extends AppCompatActivity {
         finish();
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se usa el tipo de dato Bitmap para enviar la imagen de una activity a otra
+     * Esto para el caso del equipo de futbol de: Porto
+     */
     public void sendData10(View view) {
         title = findViewById(R.id.text_item10);
         description = findViewById(R.id.text_description10);
@@ -196,6 +264,12 @@ public class SecondActivity extends AppCompatActivity {
         finish();
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se usa el tipo de dato Bitmap para enviar la imagen de una activity a otra
+     * Esto para el caso del equipo de futbol de: Marsella
+     */
     public void sendData11(View view) {
         title = findViewById(R.id.text_item11);
         description = findViewById(R.id.text_description11);
@@ -213,6 +287,12 @@ public class SecondActivity extends AppCompatActivity {
         finish();
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se usa el tipo de dato Bitmap para enviar la imagen de una activity a otra
+     * Esto para el caso del equipo de futbol de: Chelsea
+     */
     public void sendData12(View view) {
         title = findViewById(R.id.text_item12);
         description = findViewById(R.id.text_description12);
@@ -230,6 +310,12 @@ public class SecondActivity extends AppCompatActivity {
         finish();
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se usa el tipo de dato Bitmap para enviar la imagen de una activity a otra
+     * Esto para el caso del equipo de futbol de: Dormunt
+     */
     public void sendData13(View view) {
         title = findViewById(R.id.text_item13);
         description = findViewById(R.id.text_description13);
@@ -247,6 +333,12 @@ public class SecondActivity extends AppCompatActivity {
         finish();
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se usa el tipo de dato Bitmap para enviar la imagen de una activity a otra
+     * Esto para el caso del equipo de futbol de: Atletico
+     */
     public void sendData14(View view) {
         title = findViewById(R.id.text_item14);
         description = findViewById(R.id.text_description14);
@@ -264,6 +356,13 @@ public class SecondActivity extends AppCompatActivity {
         finish();
     }
 
+
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se usa el tipo de dato Bitmap para enviar la imagen de una activity a otra
+     * Esto para el caso del equipo de futbol de: City
+     */
     public void sendData15(View view) {
         title = findViewById(R.id.text_item15);
         description = findViewById(R.id.text_description15);
@@ -281,6 +380,12 @@ public class SecondActivity extends AppCompatActivity {
         finish();
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se usa el tipo de dato Bitmap para enviar la imagen de una activity a otra
+     * Esto para el caso del equipo de futbol de: Lyon
+     */
     public void sendData16(View view) {
         title = findViewById(R.id.text_item16);
         description = findViewById(R.id.text_description16);
@@ -298,6 +403,12 @@ public class SecondActivity extends AppCompatActivity {
         finish();
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se usa el tipo de dato Bitmap para enviar la imagen de una activity a otra
+     * Esto para el caso del equipo de futbol de: Napoli
+     */
     public void sendData17(View view) {
         title = findViewById(R.id.text_item17);
         description = findViewById(R.id.text_description17);
@@ -315,6 +426,12 @@ public class SecondActivity extends AppCompatActivity {
         finish();
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se usa el tipo de dato Bitmap para enviar la imagen de una activity a otra
+     * Esto para el caso del equipo de futbol de: PSG
+     */
     public void sendData18(View view) {
         title = findViewById(R.id.text_item18);
         description = findViewById(R.id.text_description18);
@@ -332,6 +449,12 @@ public class SecondActivity extends AppCompatActivity {
         finish();
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se usa el tipo de dato Bitmap para enviar la imagen de una activity a otra
+     * Esto para el caso del equipo de futbol de: Tottenham
+     */
     public void sendData19(View view) {
         title = findViewById(R.id.text_item19);
         description = findViewById(R.id.text_description19);
@@ -349,6 +472,12 @@ public class SecondActivity extends AppCompatActivity {
         finish();
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad MainActivity.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se usa el tipo de dato Bitmap para enviar la imagen de una activity a otra
+     * Esto para el caso del equipo de futbol de: Valencia
+     */
     public void sendData20(View view) {
         title = findViewById(R.id.text_item20);
         description = findViewById(R.id.text_description20);
@@ -366,6 +495,12 @@ public class SecondActivity extends AppCompatActivity {
         finish();
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se envia el nombre del recurso por medio de un String, para proceder a bsucarlo en el detalle del producto
+     * Esto para el caso del equipo de futbol de: Real Madrid
+     */
     public void sendDetail1(View view) {
         title = findViewById(R.id.text_item1);
         description = findViewById(R.id.text_description1);
@@ -380,6 +515,12 @@ public class SecondActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se envia el nombre del recurso por medio de un String, para proceder a bsucarlo en el detalle del producto
+     * Esto para el caso del equipo de futbol de: Milan
+     */
     public void sendDetail2(View view) {
         title = findViewById(R.id.text_item2);
         description = findViewById(R.id.text_description2);
@@ -394,6 +535,12 @@ public class SecondActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se envia el nombre del recurso por medio de un String, para proceder a bsucarlo en el detalle del producto
+     * Esto para el caso del equipo de futbol de: Barcelona
+     */
     public void sendDetail3(View view) {
         title = findViewById(R.id.text_item3);
         description = findViewById(R.id.text_description3);
@@ -408,6 +555,12 @@ public class SecondActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se envia el nombre del recurso por medio de un String, para proceder a bsucarlo en el detalle del producto
+     * Esto para el caso del equipo de futbol de: Liverpool
+     */
     public void sendDetail4(View view) {
         title = findViewById(R.id.text_item4);
         description = findViewById(R.id.text_description4);
@@ -422,6 +575,12 @@ public class SecondActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se envia el nombre del recurso por medio de un String, para proceder a bsucarlo en el detalle del producto
+     * Esto para el caso del equipo de futbol de: Bayern Munich
+     */
     public void sendDetail5(View view) {
         title = findViewById(R.id.text_item5);
         description = findViewById(R.id.text_description5);
@@ -436,6 +595,12 @@ public class SecondActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se envia el nombre del recurso por medio de un String, para proceder a bsucarlo en el detalle del producto
+     * Esto para el caso del equipo de futbol de: Ajax
+     */
     public void sendDetail6(View view) {
         title = findViewById(R.id.text_item6);
         description = findViewById(R.id.text_description6);
@@ -450,6 +615,12 @@ public class SecondActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se envia el nombre del recurso por medio de un String, para proceder a bsucarlo en el detalle del producto
+     * Esto para el caso del equipo de futbol de: Manchester United
+     */
     public void sendDetail7(View view) {
         title = findViewById(R.id.text_item7);
         description = findViewById(R.id.text_description7);
@@ -464,6 +635,12 @@ public class SecondActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se envia el nombre del recurso por medio de un String, para proceder a bsucarlo en el detalle del producto
+     * Esto para el caso del equipo de futbol de: Juventus
+     */
     public void sendDetail8(View view) {
         title = findViewById(R.id.text_item8);
         description = findViewById(R.id.text_description8);
@@ -478,6 +655,12 @@ public class SecondActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se envia el nombre del recurso por medio de un String, para proceder a bsucarlo en el detalle del producto
+     * Esto para el caso del equipo de futbol de: Benfica
+     */
     public void sendDetail9(View view) {
         title = findViewById(R.id.text_item9);
         description = findViewById(R.id.text_description9);
@@ -492,6 +675,12 @@ public class SecondActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se envia el nombre del recurso por medio de un String, para proceder a bsucarlo en el detalle del producto
+     * Esto para el caso del equipo de futbol de: Porto
+     */
     public void sendDetail10(View view) {
         title = findViewById(R.id.text_item10);
         description = findViewById(R.id.text_description10);
@@ -506,6 +695,12 @@ public class SecondActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se envia el nombre del recurso por medio de un String, para proceder a bsucarlo en el detalle del producto
+     * Esto para el caso del equipo de futbol de: Marsella
+     */
     public void sendDetail11(View view) {
         title = findViewById(R.id.text_item11);
         description = findViewById(R.id.text_description11);
@@ -520,6 +715,12 @@ public class SecondActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se envia el nombre del recurso por medio de un String, para proceder a bsucarlo en el detalle del producto
+     * Esto para el caso del equipo de futbol de: Chelsea
+     */
     public void sendDetail12(View view) {
         title = findViewById(R.id.text_item12);
         description = findViewById(R.id.text_description12);
@@ -534,6 +735,12 @@ public class SecondActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se envia el nombre del recurso por medio de un String, para proceder a bsucarlo en el detalle del producto
+     * Esto para el caso del equipo de futbol de: Dormunt
+     */
     public void sendDetail13(View view) {
         title = findViewById(R.id.text_item13);
         description = findViewById(R.id.text_description13);
@@ -548,6 +755,12 @@ public class SecondActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se envia el nombre del recurso por medio de un String, para proceder a bsucarlo en el detalle del producto
+     * Esto para el caso del equipo de futbol de: Atletico de Madrid
+     */
     public void sendDetail14(View view) {
         title = findViewById(R.id.text_item14);
         description = findViewById(R.id.text_description14);
@@ -562,6 +775,12 @@ public class SecondActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se envia el nombre del recurso por medio de un String, para proceder a bsucarlo en el detalle del producto
+     * Esto para el caso del equipo de futbol de: City
+     */
     public void sendDetail15(View view) {
         title = findViewById(R.id.text_item15);
         description = findViewById(R.id.text_description15);
@@ -576,6 +795,12 @@ public class SecondActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se envia el nombre del recurso por medio de un String, para proceder a bsucarlo en el detalle del producto
+     * Esto para el caso del equipo de futbol de: Lyon
+     */
     public void sendDetail16(View view) {
         title = findViewById(R.id.text_item16);
         description = findViewById(R.id.text_description16);
@@ -590,6 +815,12 @@ public class SecondActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se envia el nombre del recurso por medio de un String, para proceder a bsucarlo en el detalle del producto
+     * Esto para el caso del equipo de futbol de: Napoli
+     */
     public void sendDetail17(View view) {
         title = findViewById(R.id.text_item17);
         description = findViewById(R.id.text_description17);
@@ -604,6 +835,12 @@ public class SecondActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se envia el nombre del recurso por medio de un String, para proceder a bsucarlo en el detalle del producto
+     * Esto para el caso del equipo de futbol de: PSG
+     */
     public void sendDetail18(View view) {
         title = findViewById(R.id.text_item18);
         description = findViewById(R.id.text_description18);
@@ -618,6 +855,12 @@ public class SecondActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se envia el nombre del recurso por medio de un String, para proceder a bsucarlo en el detalle del producto
+     * Esto para el caso del equipo de futbol de: Tottenham
+     */
     public void sendDetail19(View view) {
         title = findViewById(R.id.text_item19);
         description = findViewById(R.id.text_description19);
@@ -632,6 +875,12 @@ public class SecondActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Este metodo envia los datos de la view seleccionada a la actividad Detalle_Product.
+     * Se envia el titulo, descripcion e imagen por medio de los Intentd
+     * Se envia el nombre del recurso por medio de un String, para proceder a bsucarlo en el detalle del producto
+     * Esto para el caso del equipo de futbol de: Valencia
+     */
     public void sendDetail20(View view) {
         title = findViewById(R.id.text_item20);
         description = findViewById(R.id.text_description20);
