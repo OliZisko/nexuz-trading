@@ -11,7 +11,7 @@ Tareas
 6. Funcionalidad del home 1. José
 7. Funcionalidad del home 2. Alberto
 8. Funcionalidad de la intervencion 2. Alberto
-9. Crear el JSON y funcionalidad en el home 2. Fran
+9. Eliminar productos de la lista intervencion 3. Fran
 
 
 API 15. Android 4.0.3
