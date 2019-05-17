@@ -19,34 +19,57 @@ import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+
+ @author: Alberto Garcia - Francisco De Oliveira - Jose Cafaro
+ Nexus Trading - App movil para carrito de compra
+ Proyecto de la materia de Programación Bajo Ambiente Android en la UCAB
+ @version 1.0.0. / 16-05-2019
+
+ */
+
 public class MainActivity extends AppCompatActivity {
 
+    //Lista que contiene los Textviews con el nombre del Producto.
     public ArrayList<TextView> shopList  = new ArrayList<TextView>();
+
+    //Lista que contiene las ImageViews con la imagen del Producto.
     public List<ImageView> imageList = new ArrayList<ImageView>();
+
+    //Lista que contiene los Textviews con el detalle o descripción del Producto.
     public List<TextView> detailList = new ArrayList<TextView>();
+
     public List<ImageView> deleteList = new ArrayList<ImageView>();
     public List<View> viewList = new ArrayList<View>();
 
+    //Contador para determinar la cantidad de productos que hay en el carrito.
     public int count;
 
-    private TextView title;
-    private TextView description;
-    private ImageView image, delete;
-
-    private static final String TAG = "MyActivity";
-
+    //Clave de definición de la respuesta.
     public static final int TEXT_REQUEST = 1;
 
+    //Variables Auxiliares  para el nombre del Producto.
     public TextView shopping_cart, title_1, title_2, title_3, title_4, title_5, title_6, title_7, title_8, title_9, title_10;
 
+    //Variables Auxiliares  para el detalle del Producto.
     public TextView description_1, description_2, description_3, description_4, description_5, description_6, description_7, description_8, description_9, description_10;
+
 
     public ImageView delete_1, delete_2, delete_3, delete_4, delete_5, delete_6, delete_7, delete_8, delete_9, delete_10;
 
+    //Variables Auxiliares  para la imagen del Producto.
     public ImageView image_1, image_2, image_3, image_4, image_5, image_6, image_7, image_8, image_9, image_10;
 
     public View view, view1, view2, view3, view4, view5, view6, view7, view8, view9, view10;
 
+    /**
+     * Este metodo callback que se ejecuta al iniciar el Activity
+     * En este metodo se les asignan a cada variable auxiliar su respectivo valor,
+     * y se utiliza un ciclo con un Switch que permite añadir cada uno de estos campos a sus
+     * respectivas Listas que mas adelante ayudarán con el funcionamiento del carrito.
+     * Además posee el funcionamiento para guardar el estado de la información (savedInstanceState)
+     * donde se cerciora que la informarción en cada uno de las Views se mantengan íntegras.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -153,7 +176,7 @@ public class MainActivity extends AppCompatActivity {
             if(title_1.getText().toString() != ""){
                 view.setVisibility(View.VISIBLE);
                 view1.setVisibility(View.VISIBLE);
-                shopping_cart.setText("Su carrito de compra:");
+                shopping_cart.setText(getString(R.string.shop_car));
                 title_1.setVisibility(View.VISIBLE);
                 description_1.setVisibility(View.VISIBLE);
                 image_1.setVisibility(View.VISIBLE);
@@ -324,8 +347,13 @@ public class MainActivity extends AppCompatActivity {
         } else {
 
         }
-    }
+    } //Cierre del método callback.
 
+    /**
+     * Este metodo es llamado en el onCreate, este añade cada View en sus listas respectivas
+     * y setea sus valores Iniciales, como dejando los textos en blanco y colocando tanto los
+     * textos como las imágenes Invisibles.
+     */
     public void initialSettings(TextView title, TextView description, ImageView image, ImageView delete, View view){
         title.setText("");
         title.setVisibility(View.INVISIBLE);
@@ -338,13 +366,23 @@ public class MainActivity extends AppCompatActivity {
         imageList.add(image);
         detailList.add(description);
         deleteList.add(delete);
-    }
+    }//Cierre del método
 
+    /**
+     * Este metodo inicia el SecondActivity (Activity que corresponde a la lista de Productos
+     * para escoger).
+     */
     public void showSecondActivity(View view) {
         Intent intent = new Intent(this, SecondActivity.class);
         startActivityForResult(intent, TEXT_REQUEST);
-    }
+    }//Cierre del método.
 
+    /**
+     * Este metodo recibe la información del Producto que fue seleccionado en el SecondActivity
+     * verificando si la respuesta fue correcta. Recibiendo como nombre del Producto y detalle un String
+     * y para la imagen del Producto se recibe un Array de Bytes. Estos datos son verificados en un Switch
+     * para ser colocados en las Views correspondientes más adelante.
+     */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -438,8 +476,12 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         }
-    }
+    }//Cierre del método
 
+    /**
+     * Este metodo que es llamado al momento de realizar el savedInstanceState en el onCreate
+     * para asignar las imagenes del Producto.
+     */
     public void saveImages(String title_team, ImageView img){
         switch (title_team){
             case "FC Real Madrid":
@@ -522,8 +564,13 @@ public class MainActivity extends AppCompatActivity {
                 img.setImageResource(getResources().getIdentifier("camisa_val_nc", "drawable", getPackageName()));
                 break;
         }
-    }
+    }//Cierre del método.
 
+    /**
+     * Este metodo es llamado en el onActivityResult cuando se reciben los datos del Producto escogido.
+     * Aquí se setean los valores del Producto y se colocan Visibles las Views. Y se valida si
+     * ya todas las Views estan llenas de Productos, y en caso de ser cierto se llama al método del Toast.
+     */
     public void setValues(String title_team, String description_team, byte[] byteArray){
         count = 0;
         int countFull = 0;
@@ -546,18 +593,23 @@ public class MainActivity extends AppCompatActivity {
             if (countFull == shopList.size()){
                 //String countTxt = Integer.toString(count);
                 showToast();
-                Log.d(TAG, "Lleno");
             }
             count++;
         }
-    }
+    }//Cierre del método.
 
+    /**
+     * Este metodo activa el mensaje Toast que ocurre cuando se llenan todos los Views.
+     */
     public void showToast(){
         Context context = getApplicationContext ();
         Toast toast = Toast.makeText(context, R.string.msg_toast, Toast.LENGTH_LONG);
         toast.show();
-    }
+    }//Cierre del método.
 
+    /**
+     * Este metodo se activa para guardar el estado de información del Activity cuando rota la pantalla
+     */
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
@@ -592,7 +644,7 @@ public class MainActivity extends AppCompatActivity {
         outState.putString("text_10", title_10.getText().toString());
         outState.putString("description_10", description_10.getText().toString());
 
-    }
+    }//Cierre del método
 
     public void delete1(View view) {
         deleteElement(0, title_1.getText().toString());
@@ -643,8 +695,6 @@ public class MainActivity extends AppCompatActivity {
                     element.setText("");
                     detailList.get(posicion).setText("");
                     break;
-                } else if (count == shopList.size()){
-                    Log.d(TAG, "Completo");
                 }
                 count++;
             }
@@ -689,8 +739,6 @@ public class MainActivity extends AppCompatActivity {
                     deleteList.get(posicion).setVisibility(View.INVISIBLE);
                     viewList.get(posicion).setVisibility(View.INVISIBLE);
                     break;
-                } else if (count == shopList.size()){
-                    Log.d(TAG, "Completo");
                 }
                 count++;
             }
@@ -700,8 +748,6 @@ public class MainActivity extends AppCompatActivity {
             if (element.getText() == "") {
                 count++;
                 break;
-            } else if (count == shopList.size()){
-                Log.d(TAG, "Completo");
             }
             count++;
         }
